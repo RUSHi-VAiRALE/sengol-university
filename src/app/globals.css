@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+/* Custom CSS Variables */
+:root {
+    --rt-theme: #09A24F;
+    --rt-primary: #5B4110;
+    --rt-primary-1: #5B4110;
+    --rt-primary-2: #5B4110;
+    --rt-secondary: #110C2D;
+    --rt-footer: #181818;
+    --rt-body: #737477;
+    --rt-heading: #262626;
+    --rt-white: #fff;
+    --rt-rating: var(--rt-primary);
+    --rt-border: #D9D9D9;
+    --rt-line: #eee;
+    --rt-hover: #5B4110;
+    --copyright-border: #242424;
+    --rt-radius: 3px;
+    --rt-radius-none: none;
+    --rt-none: none;
+    --footer-bg: #181818;
+    --light-white: #f6f6f6;
+    --color-success: #3EB75E;
+    --color-danger: #FF0003;
+    --color-warning: #FF8F3C;
+    --color-info: #1BA2DB;
+    --color-facebook: #3B5997;
+    --color-twitter: #1BA1F2;
+    --color-youtube: #ED4141;
+    --color-linkedin: #0077B5;
+    --color-pinterest: #E60022;
+    --color-instagram: #C231A1;
+    --color-vimeo: #00ADEF;
+    --color-twitch: #6441A3;
+    --color-discord: #7289da;
+    --f-light: 300;
+    --f-regular: 400;
+    --f-medium: 500;
+    --f-semi-bold: 600;
+    --f-bold: 700;
+    --f-extra-bold: 800;
+    --f-black: 900;
+    --translate: translate(-50%, -50%);
+    --transition: all 0.4s ease;
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+    --font-hind: "Hind", sans-serif;
+    --fontawesome: "Inter", sans-serif;
+    --rufina: "Inter", sans-serif;
+    --line-height-b1: 26px;
+    --line-height-b2: 26px;
+    --line-height-b3: 1.7;
+    --h1: 64px;
+    --h2: 48px;
+    --h3: 40px;
+    --h4: 36px;
+    --h5: 24px;
+    --h6: 20px;
+    --p-l: 24px;
+    --p-m: 20px;
+    --p-s: 16px;
+    --p-xs: 14px;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--p-s);
+    line-height: var(--line-height-b2);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-primary);
+    color: var(--rt-body);
+    font-weight: var(--f-regular);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Hide scrollbar for WebKit browsers */
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+body,
+html {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body,
+html {
+    -ms-overflow-style: none;
+}
+
+/* Utility class for hiding scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Ant Design placeholder styling */
+.ant-input::placeholder,
+.ant-input-textarea::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+/* Custom component classes */
+.container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300;
+}
+
+.newsletter-title {
+    @apply text-3xl md:text-4xl font-bold text-white mb-6;
+}
+
+.newsletter-form {
+    @apply max-w-lg mx-auto;
+}
+
+.rts-footer-newsletter {
+    @apply text-center mb-16;
+}
+
+.rts-newsletter-box-content {
+    @apply space-y-6;
+}
+
+.rts-nbg-btn {
+    @apply bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center gap-2;
+}
+
+.btn-arrow {
+    @apply transform hover:scale-105;
+}
+
+.rts-footer-widget {
+    @apply space-y-4;
+}
+
+.rts-footer-menu ul {
+    @apply space-y-2;
+}
+
+.rts-footer-menu li {
+    @apply list-none;
+}
+
+.rts-footer-menu a {
+    @apply text-gray-300 hover:text-white transition-colors duration-300;
+}
+
+.rts-contact-link {
+    @apply space-y-2;
+}
+
+.rts-contact-link a {
+    @apply text-gray-300 hover:text-white transition-colors duration-300;
+}
+
+.rts-post-widget .single-post {
+    @apply flex gap-3 mb-4;
+}
+
+.rts-post-widget .blog-thumb {
+    @apply flex-shrink-0;
+}
+
+.rts-post-widget .post-content {
+    @apply flex-1;
+}
+
+.rt-date {
+    @apply text-sm text-gray-400 block mb-1;
+}
+
+.rts-footer-copy-right {
+    @apply bg-gray-900 py-4;
+}
+
+.rt-center {
+    @apply text-center;
+}
+
+.rt-semi {
+    @apply font-semibold;
+}
+
+.topbar-mid {
+    @apply flex;
+}
+
+/* Custom utilities */
+.w-530 {
+    max-width: 530px;
+}
+
+.w-320 {
+    max-width: 320px;
+}
+
+.mb--40 {
+    margin-bottom: -40px;
+}
+
+.ml--30 {
+    margin-left: -30px;
+}
+
+.--p-xs {
+    font-size: var(--p-xs);
+}
+
+.d-block {
+    display: block;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Custom scrollbar for dropdown menus */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #D4AF37, #B8860B);
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #B8860B, #D4AF37);
+}

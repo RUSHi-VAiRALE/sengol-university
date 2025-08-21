@@ -1,0 +1,169 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { FaGraduationCap, FaArrowRight } from "react-icons/fa";
+
+const CourseOffer = () => {
+  const courses = [
+    {
+      id: 1,
+      title: "Department of Engineering & Technology",
+      image: "/images/courses/engineering.jpg"
+    },
+    {
+      id: 2,
+      title: "Department of Commerce",
+      image: "/images/courses/commerce.jpg"
+    },
+    {
+      id: 3,
+      title: "Department of Computer Application",
+      image: "/images/courses/computer.jpg"
+    },
+    {
+      id: 4,
+      title: "School of Hotel Management",
+      image: "/images/courses/hotel.jpg"
+    },
+    {
+      id: 5,
+      title: "School of Library & Information Science",
+      image: "/images/courses/library.jpg"
+    },
+    {
+      id: 6,
+      title: "Department of General Science",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 7,
+      title: "Department of Arts",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 8,
+      title: "Department of Physical Education",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 9,
+      title: "Dept. of Journalism & Mass Communication",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 10,
+      title: "Department of Management",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 11,
+      title: "School of Animation",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 12,
+      title: "School of Fire & Safety",
+      image: "/images/courses/course.jpg"
+    },
+  ];
+
+  return (
+    <section className="courses-offer-section relative py-16 sm:py-20 md:py-24 lg:py-32 bg-gradient-to-br from-[#fffaf2] via-white to-[#f7f1e6] overflow-hidden">
+      {/* Enhanced background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-32 -left-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-[#D4AF37]/15 via-[#B8860B]/10 to-transparent blur-3xl"></div>
+        <div className="absolute -bottom-32 -right-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-tl from-[#CD853F]/12 via-[#A0522D]/8 to-transparent blur-3xl"></div>
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative">
+        {/* Enhanced Section Title */}
+        <motion.div
+          className="section-title-wrapper text-center mb-12 md:mb-16 lg:mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 py-3 rounded-full mb-6">
+            <FaGraduationCap className="text-[#D4AF37] text-lg" />
+            <span className="text-sm font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
+              Academic Excellence
+            </span>
+          </div>
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D4AF37] via-[#B8860B] to-[#D4AF37] bg-clip-text text-transparent mb-6 leading-tight">
+            Courses We Offer
+          </h2>
+          <p className="text-gray-600 max-w-4xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed">
+            Discover world-class education across diverse fields of study designed to prepare you for tomorrow's challenges.
+          </p>
+        </motion.div>
+
+        {/* Enhanced Courses Grid */}
+        <div className="courses-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8 xl:gap-10">
+          {courses.map((course, index) => (
+            <motion.div
+              key={course.id}
+              className="course-block group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              whileHover={{ y: -10 }}
+            >
+              <div className="relative bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500">
+                {/* Course Image */}
+                <div className="course-image relative h-48 sm:h-52 md:h-56 lg:h-60 overflow-hidden">
+                  <Image
+                    src={course.image}
+                    alt={course.title}
+                    fill
+                    className="course-image-content object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+                  {/* Floating Badge */}
+                  <div className="absolute top-4 right-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                    Premium
+                  </div>
+
+                  {/* Overlay Icon */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-16 h-16 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                      <FaGraduationCap className="text-white text-xl" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Course Content */}
+                <div className="course-title-bar p-6">
+                  <h3 className="course-title text-base sm:text-lg font-bold text-gray-800 group-hover:text-[#B8860B] transition-colors duration-300 mb-4 leading-tight">
+                    {course.title}
+                  </h3>
+
+                  {/* Stats */}
+                  <div className="flex items-center justify-between mb-4 text-sm text-gray-600">
+                    <span className="flex items-center gap-1">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full"></div>
+                      Available
+                    </span>
+                    <span>2025-26</span>
+                  </div>
+
+                  {/* Enhanced Button */}
+                  <button className="w-full group/btn bg-gradient-to-r from-[#D4AF37] to-[#B8860B] hover:from-[#B8860B] hover:to-[#D4AF37] text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2">
+                    Explore Program
+                    <FaArrowRight className="group-hover/btn:translate-x-1 transition-transform duration-300" />
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CourseOffer;
