@@ -112,10 +112,10 @@ const ModernNavbar = () => {
             <div className="bg-gradient-to-r from-[#6b3f14] via-[#a37e31] to-[#6b3f14] text-white py-3 text-sm relative overflow-hidden">
                 {/* Subtle animated background pattern */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#8b5a1f]/10 via-transparent to-[#8b5a1f]/10 animate-pulse"></div>
-                <div className="w-full mx-auto px-4 lg:px-6 xl:px-8 relative">
+                <div className="w-full mx-auto px-4 lg:px-12 xl:px-16 2xl:px-20 max-w-[1400px] relative">
                     <div className="flex justify-between items-center">
                         <motion.span
-                            className="text-base lg:text-lg font-semibold tracking-wide"
+                            className="text-base lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold tracking-wide"
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5 }}
@@ -129,12 +129,12 @@ const ModernNavbar = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            <span className="text-base lg:text-lg font-bold animate-pulse bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm border border-white/30">
+                            <span className="text-base lg:text-xl xl:text-2xl font-bold animate-pulse bg-white/20 px-4 lg:px-6 xl:px-8 py-2 lg:py-3 xl:py-4 rounded-full backdrop-blur-sm border border-white/30">
                                 🎓 Admission Open: 2025-2026
                             </span>
-                            <div className="flex items-center gap-3 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20">
-                                <FaPhoneAlt className="text-sm" />
-                                <span className="font-medium">+91-9205299887</span>
+                            <div className="flex items-center gap-3 lg:gap-4 xl:gap-5 bg-white/10 px-4 lg:px-6 xl:px-8 py-2 lg:py-3 xl:py-4 rounded-full backdrop-blur-sm border border-white/20">
+                                <FaPhoneAlt className="text-sm lg:text-base xl:text-lg" />
+                                <span className="font-medium text-base lg:text-lg xl:text-xl">+91-9205299887</span>
                             </div>
                         </motion.div>
                     </div>
@@ -143,15 +143,12 @@ const ModernNavbar = () => {
 
             {/* Main Navigation */}
             <motion.header
-                className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-gradient-to-r from-white/95 via-[#fffaf2]/95 to-white/95 backdrop-blur-xl shadow-2xl border-b border-[#a37e31]/10'
-                    : 'bg-gradient-to-r from-white via-[#fffaf2] to-white shadow-lg border-b border-gray-100/50'
-                    }`}
+                className="bg-gradient-to-r from-white via-[#fffaf2] to-white shadow-lg border-b border-gray-100/50 transition-all duration-300"
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <div className="w-full mx-auto px-4 lg:px-6 xl:px-8">
+                <div className="w-full mx-auto px-4 lg:px-12 xl:px-16 2xl:px-20">
                     {/* University Header */}
                     <div className="py-5 lg:py-6 border-b border-[#a37e31]/10">
                         <div className="flex justify-between items-center">
@@ -169,10 +166,10 @@ const ModernNavbar = () => {
                                         />
                                     </div>
                                     <div className="hidden md:block">
-                                        <h1 className="text-xl lg:text-2xl xl:text-3xl font-bold bg-gradient-to-r from-[#6b3f14] via-[#a37e31] to-[#6b3f14] bg-clip-text text-transparent tracking-tight leading-tight">
+                                        <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold bg-gradient-to-r from-[#6b3f14] via-[#a37e31] to-[#6b3f14] bg-clip-text text-transparent tracking-tight leading-tight">
                                             SENGOL INTERNATIONAL UNIVERSITY
                                         </h1>
-                                        <p className="text-xs lg:text-sm text-gray-600 mt-1 font-medium">
+                                        <p className="text-xs lg:text-base xl:text-lg 2xl:text-xl text-gray-600 mt-1 font-medium">
                                             Established by Act No. 14 of 2025 Sikkim State Legislative Assembly
                                         </p>
                                     </div>
@@ -184,9 +181,9 @@ const ModernNavbar = () => {
                                 <div className="flex items-center justify-end gap-4 mb-3">
                                     <a
                                         href="mailto:admission@sengolinternationaluniversity.edu.in"
-                                        className="flex items-center gap-3 text-[#6b3f14] hover:text-[#a37e31] transition-colors font-semibold text-sm lg:text-base"
+                                        className="flex items-center gap-3 lg:gap-4 xl:gap-5 text-[#6b3f14] hover:text-[#a37e31] transition-colors font-semibold text-sm lg:text-lg xl:text-xl 2xl:text-2xl"
                                     >
-                                        <FaEnvelope className="text-lg" />
+                                        <FaEnvelope className="text-lg lg:text-xl xl:text-2xl" />
                                         <span>admission@sengolinternationaluniversity.edu.in</span>
                                     </a>
                                 </div>
@@ -202,11 +199,11 @@ const ModernNavbar = () => {
                                         <motion.a
                                             key={index}
                                             href={href}
-                                            className={`p-3 rounded-full bg-gradient-to-r from-[#a37e31]/10 to-[#6b3f14]/10 text-gray-700 transition-all ${color} hover:scale-110 hover:shadow-lg border border-[#a37e31]/20 backdrop-blur-sm`}
+                                            className={`p-3 lg:p-4 xl:p-5 rounded-full bg-gradient-to-r from-[#a37e31]/10 to-[#6b3f14]/10 text-gray-700 transition-all ${color} hover:scale-110 hover:shadow-lg border border-[#a37e31]/20 backdrop-blur-sm`}
                                             whileHover={{ scale: 1.1 }}
                                             whileTap={{ scale: 0.95 }}
                                         >
-                                            <Icon size={16} />
+                                            <Icon size={20} className="lg:w-6 lg:h-6 xl:w-7 xl:h-7" />
                                         </motion.a>
                                     ))}
                                 </div>
@@ -229,7 +226,7 @@ const ModernNavbar = () => {
                             <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/10 via-[#B8860B]/5 to-[#D4AF37]/10 rounded-3xl backdrop-blur-sm"></div>
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D4AF37]/10 to-transparent rounded-3xl"></div>
 
-                            <ul className="relative flex items-center justify-center gap-4 lg:gap-8 xl:gap-12 px-8">
+                            <ul className="relative flex items-center justify-center gap-4 lg:gap-6 xl:gap-8 px-8 lg:px-10 xl:px-12">
                                 {navLinks.map((link, index) => (
                                     <motion.li
                                         key={index}
@@ -240,7 +237,7 @@ const ModernNavbar = () => {
                                     >
                                         <Link
                                             href={link.href}
-                                            className="flex items-center gap-3 px-6 py-4 text-gray-800 font-bold text-base lg:text-lg xl:text-xl hover:text-[#B8860B] transition-all duration-300 rounded-2xl hover:bg-gradient-to-r hover:from-[#D4AF37]/15 hover:to-[#B8860B]/15 border border-transparent hover:border-[#D4AF37]/40 hover:shadow-xl backdrop-blur-sm transform hover:scale-105"
+                                            className="flex items-center gap-3 px-6 lg:px-7 xl:px-8 py-4 lg:py-4 xl:py-5 text-gray-800 font-bold text-lg lg:text-xl xl:text-2xl hover:text-[#B8860B] transition-all duration-300 rounded-2xl hover:bg-gradient-to-r hover:from-[#D4AF37]/15 hover:to-[#B8860B]/15 border border-transparent hover:border-[#D4AF37]/40 hover:shadow-xl backdrop-blur-sm transform hover:scale-105"
                                             onMouseEnter={() => link.submenu && setActiveDropdown(index)}
                                             onMouseLeave={() => setActiveDropdown(null)}
                                         >
@@ -249,7 +246,7 @@ const ModernNavbar = () => {
                                             {link.submenu && (
                                                 <FaChevronDown
                                                     size={16}
-                                                    className="transition-transform group-hover:rotate-180 duration-300 text-[#B8860B] opacity-70 group-hover:opacity-100"
+                                                    className="lg:w-5 lg:h-5 xl:w-6 xl:h-6 transition-transform group-hover:rotate-180 duration-300 text-[#B8860B] opacity-70 group-hover:opacity-100"
                                                 />
                                             )}
                                         </Link>
@@ -259,7 +256,7 @@ const ModernNavbar = () => {
                                             <AnimatePresence>
                                                 {activeDropdown === index && (
                                                     <motion.div
-                                                        className="absolute top-full left-0 mt-6 w-[480px] bg-gradient-to-br from-white/95 via-[#fffaf2]/95 to-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-[#D4AF37]/30 py-6 z-50 overflow-hidden"
+                                                        className="absolute top-full left-0 mt-6 w-[480px] lg:w-[500px] xl:w-[520px] bg-gradient-to-br from-white/95 via-[#fffaf2]/95 to-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-[#D4AF37]/30 py-6 z-50 overflow-hidden"
                                                         initial={{ opacity: 0, y: -20, scale: 0.95 }}
                                                         animate={{ opacity: 1, y: 0, scale: 1 }}
                                                         exit={{ opacity: 0, y: -20, scale: 0.95 }}
@@ -270,16 +267,16 @@ const ModernNavbar = () => {
                                                         {/* Dropdown Header */}
                                                         <div className="px-6 pb-4 mb-4 border-b border-[#D4AF37]/20">
                                                             <div className="flex items-center gap-3">
-                                                                <div className="w-8 h-8 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center">
-                                                                    <span className="text-white text-xs font-bold">
+                                                                <div className="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center">
+                                                                    <span className="text-white text-xs lg:text-sm font-bold">
                                                                         {link.title.charAt(0)}
                                                                     </span>
                                                                 </div>
                                                                 <div>
-                                                                    <h4 className="font-bold text-lg bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent">
+                                                                    <h4 className="font-bold text-xl lg:text-2xl xl:text-2xl bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent">
                                                                         {link.title}
                                                                     </h4>
-                                                                    <p className="text-xs text-gray-600">Explore our offerings</p>
+                                                                    <p className="text-sm lg:text-base text-gray-600">Explore our offerings</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -295,7 +292,7 @@ const ModernNavbar = () => {
                                                                 >
                                                                     <Link
                                                                         href={subLink.href}
-                                                                        className="flex items-center gap-4 px-6 py-4 text-base text-gray-700 hover:text-[#B8860B] hover:bg-gradient-to-r hover:from-[#D4AF37]/10 hover:to-[#B8860B]/10 transition-all duration-300 mx-3 rounded-2xl font-medium group border border-transparent hover:border-[#D4AF37]/20 hover:shadow-lg"
+                                                                        className="flex items-center gap-4 px-6 py-4 text-lg lg:text-lg xl:text-xl text-gray-700 hover:text-[#B8860B] hover:bg-gradient-to-r hover:from-[#D4AF37]/10 hover:to-[#B8860B]/10 transition-all duration-300 mx-3 rounded-2xl font-medium group border border-transparent hover:border-[#D4AF37]/20 hover:shadow-lg"
                                                                     >
                                                                         <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0"></div>
                                                                         <span className="flex-1">{subLink.text}</span>
@@ -321,7 +318,7 @@ const ModernNavbar = () => {
                                 >
                                     <Link
                                         href="#"
-                                        className="relative bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 transform hover:scale-110 shadow-xl hover:shadow-2xl border border-[#D4AF37]/30 backdrop-blur-sm overflow-hidden group flex flex-row items-center gap-3"
+                                        className="relative bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white px-8 lg:px-9 xl:px-10 py-4 lg:py-4 xl:py-5 rounded-2xl font-bold text-xl lg:text-xl xl:text-2xl hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 transform hover:scale-110 shadow-xl hover:shadow-2xl border border-[#D4AF37]/30 backdrop-blur-sm overflow-hidden group flex flex-row items-center gap-3"
                                     >
                                         <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         <div className="relative flex items-center gap-3">

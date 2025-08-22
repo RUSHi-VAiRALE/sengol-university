@@ -33,64 +33,102 @@ const brands = [
 ];
 
 const BrandSlider = () => {
-  // Swiper configuration translated from data-swiper attribute
+  // Enhanced Swiper configuration for modern design
   const swiperOptions = {
     slidesPerView: 6,
     loop: true,
+    spaceBetween: 20,
     autoplay: {
-      delay: 3000,
-      disableOnInteraction: false, // Continue autoplay after user interaction
+      delay: 4000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true, // Pause on hover for better UX
     },
     breakpoints: {
       320: {
-        slidesPerView: 3,
+        slidesPerView: 2,
+        spaceBetween: 15,
         centeredSlides: true,
       },
       575: {
-        slidesPerView: 4,
+        slidesPerView: 3,
+        spaceBetween: 20,
         centeredSlides: true,
       },
       768: {
-        slidesPerView: 5,
+        slidesPerView: 4,
+        spaceBetween: 25,
         centeredSlides: true,
       },
-      991: {
-        slidesPerView: 6,
-        centeredSlides: true, // Keep centered for consistency with smaller breakpoints
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        centeredSlides: false,
       },
-      1201: {
+      1280: {
         slidesPerView: 6,
-        centeredSlides: false, // No longer centered on largest screens if not desired
+        spaceBetween: 35,
+        centeredSlides: false,
+      },
+      1536: {
+        slidesPerView: 7,
+        spaceBetween: 40,
+        centeredSlides: false,
       },
     },
-    modules: [Autoplay], // Enable the Autoplay module
+    modules: [Autoplay],
   };
 
   return (
-    <div className="rts-brand v_1 py-16 md:py-20 lg:py-24 bg-white">
-      {" "}
-      {/* Converted pb--85 pt--85 */}
-      <div className="container mx-auto px-4">
+    <div className="rts-brand v_1 py-16 md:py-20 lg:py-28 xl:py-36 2xl:py-44 bg-gradient-to-br from-[#fffaf2] via-[#f8f4ec] to-[#f7f1e6] relative overflow-hidden">
+      {/* Enhanced background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-32 -left-32 w-[45rem] h-[45rem] rounded-full bg-gradient-to-br from-[#D4AF37]/8 via-[#B8860B]/5 to-transparent blur-3xl"></div>
+        <div className="absolute -bottom-32 -right-32 w-[45rem] h-[45rem] rounded-full bg-gradient-to-tl from-[#CD853F]/6 via-[#A0522D]/3 to-transparent blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-gradient-to-r from-[#D4AF37]/4 to-[#B8860B]/3 rounded-full blur-2xl"></div>
+      </div>
+      <div className="mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20 max-w-[1400px] relative">
+        {/* Enhanced Section Title */}
+        <div className="text-center mb-12 lg:mb-16 xl:mb-20 2xl:mb-24">
+          {/* Enhanced Badge */}
+          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
+            <div className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center">
+              <span className="text-white text-lg lg:text-xl xl:text-2xl">🤝</span>
+            </div>
+            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
+              Our Partners & Affiliations
+            </span>
+          </div>
+
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4 lg:mb-6 xl:mb-8 bg-gradient-to-r from-[#D4AF37] via-[#B8860B] to-[#D4AF37] bg-clip-text text-transparent leading-tight">
+            Trusted Partners
+          </h2>
+          <p className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-700 max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto leading-relaxed">
+            Collaborating with leading organizations to provide exceptional educational opportunities
+          </p>
+        </div>
+
         <div className="flex justify-center">
-          {" "}
-          {/* Converted .row .justify-content-md-center */}
-          <div className="w-full lg:w-11/12">
-            {" "}
-            {/* Converted col-lg-12 col-md-11 */}
-            <div className="rts-brand-slider">
-              <Swiper {...swiperOptions}>
+          <div className="w-full">
+            <div className="rts-brand-slider bg-gradient-to-r from-white/80 via-white/90 to-white/80 backdrop-blur-sm rounded-3xl lg:rounded-[2rem] xl:rounded-[2.5rem] p-8 lg:p-12 xl:p-16 2xl:p-20 border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <Swiper {...swiperOptions} className="brand-swiper-enhanced overflow-visible">
                 {brands.map((brand) => (
                   <SwiperSlide key={brand.id}>
-                    <div className="single-brand-logo flex justify-center items-center h-full">
-                      <Link href={brand.link} className="block">
-                        <Image
-                          src={brand.src}
-                          alt={brand.alt}
-                          width={80} // Adjust width to your logo's typical size
-                          height={80} // Adjust height to your logo's typical size
-                          objectFit="contain" // Ensures the whole logo is visible
-                          className="max-w-[120px] h-auto opacity-70 hover:opacity-100 transition-opacity duration-300" // Tailwind classes for sizing and hover effect
-                        />
+                    <div className="single-brand-logo flex justify-center items-center h-full py-4 lg:py-6 xl:py-8 relative">
+                      <Link href={brand.link} className="group block">
+                        <div className="relative bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl lg:rounded-3xl p-6 lg:p-8 xl:p-10 2xl:p-12 border border-[#D4AF37]/10 hover:border-[#D4AF37]/30 shadow-lg transform transition-transform duration-500 hover:scale-105 z-10">
+                          {/* Decorative corner elements */}
+                          <div className="absolute top-0 left-0 w-4 h-4 lg:w-6 lg:h-6 bg-gradient-to-br from-[#D4AF37]/20 to-transparent rounded-full"></div>
+                          <div className="absolute bottom-0 right-0 w-4 h-4 lg:w-6 lg:h-6 bg-gradient-to-tl from-[#B8860B]/20 to-transparent rounded-full"></div>
+
+                          <Image
+                            src={brand.src}
+                            alt={brand.alt}
+                            width={120}
+                            height={120}
+                            objectFit="contain"
+                            className="max-w-[80px] lg:max-w-[100px] xl:max-w-[120px] 2xl:max-w-[140px] h-auto relative z-20"
+                          />
+                        </div>
                       </Link>
                     </div>
                   </SwiperSlide>

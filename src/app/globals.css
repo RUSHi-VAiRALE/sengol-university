@@ -259,3 +259,108 @@ html {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, #B8860B, #D4AF37);
 }
+
+/* Enhanced Swiper pagination for StudentFeedback */
+.rts__testimonial--active .swiper-pagination {
+    position: relative !important;
+    bottom: 0 !important;
+    margin-top: 2rem;
+}
+
+.rts__testimonial--active .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: linear-gradient(45deg, #D4AF37, #B8860B) !important;
+    opacity: 0.4 !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid rgba(212, 175, 55, 0.3) !important;
+    margin: 0 6px !important;
+}
+
+.rts__testimonial--active .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    transform: scale(1.3) !important;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4) !important;
+    border-color: rgba(212, 175, 55, 0.8) !important;
+}
+
+@media (min-width: 1024px) {
+    .rts__testimonial--active .swiper-pagination-bullet {
+        width: 14px !important;
+        height: 14px !important;
+        margin: 0 8px !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .rts__testimonial--active .swiper-pagination-bullet {
+        width: 16px !important;
+        height: 16px !important;
+        margin: 0 10px !important;
+    }
+}
+
+/* Enhanced Brand Slider Styling */
+.brand-swiper-enhanced {
+    overflow: visible !important;
+}
+
+.brand-swiper-enhanced .swiper-slide {
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.brand-swiper-enhanced .swiper-wrapper {
+    align-items: center !important;
+}
+
+/* Brand logo hover animations - Enhanced */
+.single-brand-logo .group {
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.single-brand-logo .group:hover {
+    z-index: 10;
+    transform: scale(1.05);
+}
+
+/* Brand card animations */
+.single-brand-logo .group>div {
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.single-brand-logo .group:hover>div {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.25);
+}
+
+/* Enhanced image animations */
+.single-brand-logo img {
+    filter: grayscale(100%) brightness(0.7) opacity(0.6);
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.single-brand-logo .group:hover img {
+    filter: grayscale(0%) brightness(1) opacity(1);
+    transform: scale(1.1);
+}
+
+/* Glow effect animation */
+.single-brand-logo .group>div::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(184, 134, 11, 0.1));
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.single-brand-logo .group:hover>div::before {
+    opacity: 1;
+}

@@ -77,31 +77,31 @@ const CourseOffer = () => {
         <div className="absolute -bottom-32 -right-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-tl from-[#CD853F]/12 via-[#A0522D]/8 to-transparent blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative">
+      <div className="mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20 max-w-[1400px] relative">
         {/* Enhanced Section Title */}
         <motion.div
-          className="section-title-wrapper text-center mb-12 md:mb-16 lg:mb-20"
+          className="section-title-wrapper text-center mb-12 md:mb-16 lg:mb-24 xl:mb-28 2xl:mb-32"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 py-3 rounded-full mb-6">
-            <FaGraduationCap className="text-[#D4AF37] text-lg" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
+          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
+            <FaGraduationCap className="text-[#D4AF37] text-lg lg:text-xl xl:text-2xl" />
+            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
               Academic Excellence
             </span>
           </div>
-          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D4AF37] via-[#B8860B] to-[#D4AF37] bg-clip-text text-transparent mb-6 leading-tight">
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold bg-gradient-to-r from-[#D4AF37] via-[#B8860B] to-[#D4AF37] bg-clip-text text-transparent mb-6 lg:mb-8 xl:mb-10 leading-tight">
             Courses We Offer
           </h2>
-          <p className="text-gray-600 max-w-4xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed">
+          <p className="text-gray-600 max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-relaxed">
             Discover world-class education across diverse fields of study designed to prepare you for tomorrow's challenges.
           </p>
         </motion.div>
 
         {/* Enhanced Courses Grid */}
-        <div className="courses-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8 xl:gap-10">
+        <div className="courses-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
           {courses.map((course, index) => (
             <motion.div
               key={course.id}
@@ -112,9 +112,9 @@ const CourseOffer = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -10 }}
             >
-              <div className="relative bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500">
+              <div className="relative bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500 lg:hover:scale-105">
                 {/* Course Image */}
-                <div className="course-image relative h-48 sm:h-52 md:h-56 lg:h-60 overflow-hidden">
+                <div className="course-image relative h-48 sm:h-52 md:h-56 lg:h-64 xl:h-72 2xl:h-80 overflow-hidden">
                   <Image
                     src={course.image}
                     alt={course.title}
@@ -124,37 +124,37 @@ const CourseOffer = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
                   {/* Floating Badge */}
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                  <div className="absolute top-4 right-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white px-3 lg:px-4 xl:px-5 py-1.5 lg:py-2 xl:py-2.5 rounded-full text-xs lg:text-sm xl:text-base font-bold shadow-lg">
                     Premium
                   </div>
 
                   {/* Overlay Icon */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-16 h-16 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                      <FaGraduationCap className="text-white text-xl" />
+                    <div className="w-16 h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                      <FaGraduationCap className="text-white text-xl lg:text-2xl xl:text-3xl" />
                     </div>
                   </div>
                 </div>
 
                 {/* Course Content */}
-                <div className="course-title-bar p-6">
-                  <h3 className="course-title text-base sm:text-lg font-bold text-gray-800 group-hover:text-[#B8860B] transition-colors duration-300 mb-4 leading-tight">
+                <div className="course-title-bar p-6 lg:p-8 xl:p-10">
+                  <h3 className="course-title text-base sm:text-lg lg:text-xl xl:text-2xl font-bold text-gray-800 group-hover:text-[#B8860B] transition-colors duration-300 mb-4 lg:mb-5 xl:mb-6 leading-tight">
                     {course.title}
                   </h3>
 
                   {/* Stats */}
-                  <div className="flex items-center justify-between mb-4 text-sm text-gray-600">
-                    <span className="flex items-center gap-1">
-                      <div className="w-2 h-2 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full"></div>
+                  <div className="flex items-center justify-between mb-4 lg:mb-5 xl:mb-6 text-sm lg:text-base xl:text-lg text-gray-600">
+                    <span className="flex items-center gap-1 lg:gap-2">
+                      <div className="w-2 h-2 lg:w-3 lg:h-3 xl:w-4 xl:h-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full"></div>
                       Available
                     </span>
                     <span>2025-26</span>
                   </div>
 
                   {/* Enhanced Button */}
-                  <button className="w-full group/btn bg-gradient-to-r from-[#D4AF37] to-[#B8860B] hover:from-[#B8860B] hover:to-[#D4AF37] text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2">
+                  <button className="w-full group/btn bg-gradient-to-r from-[#D4AF37] to-[#B8860B] hover:from-[#B8860B] hover:to-[#D4AF37] text-white font-bold py-3 lg:py-4 xl:py-5 px-4 lg:px-6 xl:px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2 lg:gap-3 xl:gap-4 text-sm lg:text-base xl:text-lg">
                     Explore Program
-                    <FaArrowRight className="group-hover/btn:translate-x-1 transition-transform duration-300" />
+                    <FaArrowRight className="group-hover/btn:translate-x-1 transition-transform duration-300 text-sm lg:text-base xl:text-lg" />
                   </button>
                 </div>
               </div>

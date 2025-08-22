@@ -53,31 +53,31 @@ const CampusLife = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] bg-gradient-to-r from-[#D4AF37]/10 to-[#B8860B]/10 rounded-full blur-2xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative">
+      <div className="mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20 max-w-[1400px] relative">
         {/* Enhanced Section Title & Description */}
         <motion.div
-          className="rts__section--wrapper text-center mb-12 lg:mb-16 xl:mb-20"
+          className="rts__section--wrapper text-center mb-12 lg:mb-20 xl:mb-24 2xl:mb-28"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 py-3 rounded-full mb-6">
-            <FaUsers className="text-[#D4AF37] text-lg" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
+          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
+            <FaUsers className="text-[#D4AF37] text-lg lg:text-xl xl:text-2xl" />
+            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
               Student Experience
             </span>
           </div>
-          <p className="rts__section--wrapper--description text-base sm:text-lg md:text-xl text-gray-300 mb-6 max-w-4xl mx-auto leading-relaxed">
+          <p className="rts__section--wrapper--description text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-300 mb-6 lg:mb-8 xl:mb-10 max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto leading-relaxed">
             A dynamic and engaging community of students, faculty, and alumni, fostering innovation and excellence at Sengol International University.
           </p>
-          <h2 className="rts__section--wrapper--title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h2 className="rts__section--wrapper--title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight">
             Campus <span className="bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent"> Life</span>
           </h2>
         </motion.div>
 
         {/* Enhanced Campus Activity Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 xl:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 2xl:gap-20">
           {campusActivities.map((activity, index) => (
             <motion.div
               key={index}
@@ -88,9 +88,9 @@ const CampusLife = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               whileHover={{ y: -10 }}
             >
-              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500">
+              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500 lg:hover:scale-105">
                 <Link href={activity.link}>
-                  <div className="campus__single--item--thumb w-full h-64 md:h-72 lg:h-80 relative overflow-hidden">
+                  <div className="campus__single--item--thumb w-full h-64 md:h-72 lg:h-80 xl:h-96 2xl:h-[28rem] relative overflow-hidden">
                     <Image
                       src={activity.image}
                       alt={activity.alt}
@@ -101,19 +101,19 @@ const CampusLife = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
                     {/* Floating Icon */}
-                    <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className={`w-12 h-12 bg-gradient-to-r ${activity.gradient} rounded-xl flex items-center justify-center shadow-lg`}>
-                        <activity.icon className="text-white text-lg" />
+                    <div className="absolute top-6 lg:top-8 xl:top-10 right-6 lg:right-8 xl:right-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className={`w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r ${activity.gradient} rounded-xl flex items-center justify-center shadow-lg`}>
+                        <activity.icon className="text-white text-lg lg:text-xl xl:text-2xl" />
                       </div>
                     </div>
 
                     {/* Overlay Content */}
-                    <div className="absolute inset-0 flex items-end p-6">
+                    <div className="absolute inset-0 flex items-end p-6 lg:p-8 xl:p-10">
                       <div className="text-white">
-                        <p className="text-sm opacity-90 mb-2">{activity.description}</p>
+                        <p className="text-sm lg:text-base xl:text-lg opacity-90 mb-2 lg:mb-3 xl:mb-4">{activity.description}</p>
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className={`inline-flex items-center gap-2 bg-gradient-to-r ${activity.gradient} px-4 py-2 rounded-full text-sm font-bold`}>
-                            Explore <FaArrowRight className="text-xs" />
+                          <div className={`inline-flex items-center gap-2 lg:gap-3 bg-gradient-to-r ${activity.gradient} px-4 lg:px-5 xl:px-6 py-2 lg:py-2.5 xl:py-3 rounded-full text-sm lg:text-base xl:text-lg font-bold`}>
+                            Explore <FaArrowRight className="text-xs lg:text-sm xl:text-base" />
                           </div>
                         </div>
                       </div>
@@ -122,17 +122,17 @@ const CampusLife = () => {
                 </Link>
 
                 {/* Enhanced Title Section */}
-                <div className="p-6">
+                <div className="p-6 lg:p-8 xl:p-10">
                   <Link
                     href={activity.link}
                     className="group/link block"
                   >
                     <div className="flex items-center justify-between">
-                      <h5 className="text-xl md:text-2xl font-bold text-white group-hover/link:text-[#D4AF37] transition-colors duration-300">
+                      <h5 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white group-hover/link:text-[#D4AF37] transition-colors duration-300">
                         {activity.title}
                       </h5>
-                      <div className={`w-8 h-8 bg-gradient-to-r ${activity.gradient} rounded-full flex items-center justify-center group-hover/link:scale-110 transition-transform duration-300`}>
-                        <FaArrowRight className="text-white text-sm" />
+                      <div className={`w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-gradient-to-r ${activity.gradient} rounded-full flex items-center justify-center group-hover/link:scale-110 transition-transform duration-300`}>
+                        <FaArrowRight className="text-white text-sm lg:text-base xl:text-lg" />
                       </div>
                     </div>
                   </Link>
@@ -151,7 +151,7 @@ const CampusLife = () => {
           alt="note khata"
           width={80}
           height={80}
-          className="absolute top-1/4 left-1/10 hidden md:block opacity-50"
+          className="absolute top-1/4 left-1/10 hidden md:block lg:w-24 lg:h-24 xl:w-28 xl:h-28 opacity-50"
         />{" "}
         {/* Positioning and hidden on small screens */}
         <Image
@@ -159,14 +159,14 @@ const CampusLife = () => {
           alt="book"
           width={100}
           height={100}
-          className="absolute bottom-1/4 right-1/10 hidden md:block opacity-50"
+          className="absolute bottom-1/4 right-1/10 hidden md:block lg:w-28 lg:h-28 xl:w-32 xl:h-32 opacity-50"
         />
         <Image
           src={compassScale}
           alt="compass scale"
           width={90}
           height={90}
-          className="absolute top-1/2 left-[5%] -translate-y-1/2 hidden lg:block opacity-50"
+          className="absolute top-1/2 left-[5%] -translate-y-1/2 hidden lg:block lg:w-26 lg:h-26 xl:w-30 xl:h-30 opacity-50"
         />
       </div>
     </section>
