@@ -136,6 +136,13 @@ const ModernNavbar = () => {
                                 <FaPhoneAlt className="text-sm lg:text-base xl:text-lg" />
                                 <span className="font-medium text-base lg:text-lg xl:text-xl">+91-9205299887</span>
                             </div>
+                            <Link
+                                href="#"
+                                className="bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 px-4 lg:px-6 xl:px-8 py-2 lg:py-3 xl:py-4 rounded-full font-bold text-sm lg:text-base xl:text-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm shadow-lg hover:shadow-xl flex items-center gap-2 lg:gap-3"
+                            >
+                                <span className="text-xs lg:text-sm">👤</span>
+                                Login
+                            </Link>
                         </motion.div>
                     </div>
                 </div>
@@ -313,7 +320,25 @@ const ModernNavbar = () => {
                                     </motion.li>
                                 ))}
 
-                                {/* Enhanced CTA Button */}
+                                {/* Enhanced Download Button */}
+                                <motion.li
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ delay: 0.7, duration: 0.5 }}
+                                >
+                                    <Link
+                                        href="#"
+                                        className="relative bg-gradient-to-r from-[#312518] via-[#8f3a17] to-[#ad4a16] text-white px-6 lg:px-7 xl:px-8 py-4 lg:py-4 xl:py-5 rounded-2xl font-bold text-lg lg:text-xl xl:text-xl hover:from-[#ad4a16] hover:via-[#8f3a17] hover:to-[#312518] transition-all duration-300 transform hover:scale-110 shadow-xl hover:shadow-2xl border border-[#ad4a16]/30 backdrop-blur-sm overflow-hidden group flex flex-row items-center gap-3"
+                                    >
+                                        <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                        <div className="relative flex items-center gap-2">
+                                            <span className="text-base">📥</span>
+                                            Download
+                                        </div>
+                                    </Link>
+                                </motion.li>
+
+                                {/* Enhanced Apply Now Button */}
                                 <motion.li
                                     initial={{ opacity: 0, scale: 0.8 }}
                                     animate={{ opacity: 1, scale: 1 }}
@@ -337,6 +362,8 @@ const ModernNavbar = () => {
                                         </div>
                                     </Link>
                                 </motion.li>
+
+
                             </ul>
                         </div>
                     </nav>
@@ -476,23 +503,55 @@ const ModernNavbar = () => {
                                 >
                                     <div className="relative bg-gradient-to-br from-[#ad4a16]/10 to-[#8f3a17]/10 rounded-2xl p-6 border border-[#ad4a16]/20 backdrop-blur-sm">
                                         <div className="absolute inset-0 bg-gradient-to-r from-[#ad4a16]/5 via-transparent to-[#8f3a17]/5 rounded-2xl"></div>
-                                        <div className="relative text-center mb-4">
+                                        <div className="relative text-center mb-6">
                                             <h4 className="text-lg font-bold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent mb-2">
                                                 Ready to Join Us?
                                             </h4>
                                             <p className="text-sm text-gray-600">Start your journey with Sengol International University</p>
                                         </div>
-                                        <Link
-                                            href="#"
-                                            className="block w-full bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] text-white text-center py-4 px-6 rounded-xl font-bold text-lg hover:from-[#312518] hover:via-[#8f3a17] hover:to-[#ad4a16] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
-                                            onClick={toggleMobileMenu}
-                                        >
-                                            <div className="flex items-center justify-center gap-3">
-                                                <span>🎓</span>
-                                                Apply Now
-                                                <span>→</span>
+
+                                        {/* Mobile Buttons Grid */}
+                                        <div className="space-y-3">
+                                            {/* Apply Now Button */}
+                                            <Link
+                                                href="#"
+                                                className="block w-full bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] text-white text-center py-4 px-6 rounded-xl font-bold text-lg hover:from-[#312518] hover:via-[#8f3a17] hover:to-[#ad4a16] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+                                                onClick={toggleMobileMenu}
+                                            >
+                                                <div className="flex items-center justify-center gap-3">
+                                                    <span>🎓</span>
+                                                    Apply Now
+                                                    <span>→</span>
+                                                </div>
+                                            </Link>
+
+                                            {/* Download and Login Buttons */}
+                                            <div className="grid grid-cols-2 gap-3">
+                                                {/* Download Button */}
+                                                <Link
+                                                    href="#"
+                                                    className="bg-gradient-to-r from-[#312518] via-[#8f3a17] to-[#ad4a16] text-white text-center py-3 px-4 rounded-xl font-bold text-base hover:from-[#ad4a16] hover:via-[#8f3a17] hover:to-[#312518] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                                    onClick={toggleMobileMenu}
+                                                >
+                                                    <div className="flex items-center justify-center gap-2">
+                                                        <span className="text-sm">📥</span>
+                                                        Download
+                                                    </div>
+                                                </Link>
+
+                                                {/* Login Button */}
+                                                <Link
+                                                    href="#"
+                                                    className="bg-white border-2 border-[#ad4a16] text-[#ad4a16] text-center py-3 px-4 rounded-xl font-bold text-base hover:bg-gradient-to-r hover:from-[#ad4a16] hover:via-[#8f3a17] hover:to-[#312518] hover:text-white hover:border-transparent transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                                    onClick={toggleMobileMenu}
+                                                >
+                                                    <div className="flex items-center justify-center gap-2">
+                                                        <span className="text-sm">👤</span>
+                                                        Login
+                                                    </div>
+                                                </Link>
                                             </div>
-                                        </Link>
+                                        </div>
                                     </div>
                                 </motion.div>
 
