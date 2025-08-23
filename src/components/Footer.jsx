@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="w-2 h-2 lg:w-3 lg:h-3 xl:w-4 xl:h-4 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full animate-pulse"></div>
             <span className="text-[#ad4a16] text-sm lg:text-base xl:text-lg font-semibold tracking-wide">GET LATEST UPDATES</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-6 lg:mb-8 xl:mb-10 bg-gradient-to-r from-white via-[#ad4a16] to-white bg-clip-text text-transparent leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-6 lg:mb-8 xl:mb-10 text-white bg-clip-text text-transparent leading-tight">
             Subscribe to Our Newsletter
           </h2>
           <p className="text-gray-300 max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mb-10 lg:mb-12 xl:mb-14 text-lg md:text-xl lg:text-2xl xl:text-3xl leading-relaxed">

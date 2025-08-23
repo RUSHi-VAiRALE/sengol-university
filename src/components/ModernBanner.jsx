@@ -150,12 +150,12 @@ const ModernBanner = () => {
 
                                             {/* Enhanced Main Title */}
                                             <motion.h1
-                                                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold leading-tight mb-6 sm:mb-8 lg:mb-10 xl:mb-12"
+                                                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold leading-tight mb-6 sm:mb-8 lg:mb-10 xl:mb-12"
                                                 initial={{ opacity: 0, y: 30 }}
                                                 animate={{ opacity: 1, y: 0 }}
                                                 transition={{ duration: 0.8, delay: 0.6 }}
                                             >
-                                                <span className="bg-gradient-to-r from-white via-[#D4AF37]/30 to-white bg-clip-text text-transparent drop-shadow-lg">
+                                                <span className="text-white drop-shadow-lg">
                                                     {slide.title}
                                                 </span>
                                             </motion.h1>

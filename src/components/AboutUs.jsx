@@ -195,7 +195,7 @@ const AboutUs = () => {
                   whileHover={{ scale: 1.02, y: -5 }}
                 >
                   <div className="flex items-start gap-4 lg:gap-6 xl:gap-8">
-                    <div className="flex-shrink-0 w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#B8860B] to-[#CD853F] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex-shrink-0 w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <FaAward className="text-white text-lg lg:text-xl xl:text-2xl" />
                     </div>
                     <div className="flex-1">

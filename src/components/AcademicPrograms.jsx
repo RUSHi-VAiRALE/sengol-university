@@ -130,7 +130,10 @@ const AcademicPrograms = () => {
             <div className="h-1 lg:h-1.5 xl:h-2 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full mb-6 lg:mb-8 xl:mb-10 shadow-sm"></div>
 
             {/* Enhanced News Items - Scrollable */}
-            <div className="space-y-4 lg:space-y-5 xl:space-y-6 max-h-80 lg:max-h-96 xl:max-h-[28rem] overflow-y-auto custom-scrollbar pr-2">
+            <div className="space-y-4 lg:space-y-5 xl:space-y-6 max-h-80 lg:max-h-96 xl:max-h-[28rem] overflow-y-auto pr-2" style={{
+              scrollbarWidth: 'thin',
+              scrollbarColor: '#ad4a16 #f1f1f1'
+            }}>
               {newsData.map((item, index) => (
                 <motion.div
                   key={index}
@@ -185,7 +188,10 @@ const AcademicPrograms = () => {
             <div className="h-1 lg:h-1.5 xl:h-2 bg-gradient-to-r from-[#8f3a17] to-[#312518] rounded-full mb-6 lg:mb-8 xl:mb-10 shadow-sm"></div>
 
             {/* Enhanced Notice Items */}
-            <div className="space-y-3 lg:space-y-4 xl:space-y-5 max-h-80 lg:max-h-96 xl:max-h-[28rem] overflow-y-auto custom-scrollbar pr-2">
+            <div className="space-y-3 lg:space-y-4 xl:space-y-5 max-h-80 lg:max-h-96 xl:max-h-[28rem] overflow-y-auto pr-2" style={{
+              scrollbarWidth: 'thin',
+              scrollbarColor: '#ad4a16 #f1f1f1'
+            }}>
               {noticeData.map((notice, index) => (
                 <motion.div
                   key={index}

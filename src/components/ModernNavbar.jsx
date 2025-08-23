@@ -282,7 +282,10 @@ const ModernNavbar = () => {
                                                         </div>
 
                                                         {/* Dropdown Items */}
-                                                        <div className="max-h-80 overflow-y-auto custom-scrollbar">
+                                                        <div className="max-h-80 overflow-y-auto" style={{
+                                                            scrollbarWidth: 'thin',
+                                                            scrollbarColor: '#ad4a16 #f1f1f1'
+                                                        }}>
                                                             {link.submenu.map((subLink, subIndex) => (
                                                                 <motion.div
                                                                     key={subIndex}
