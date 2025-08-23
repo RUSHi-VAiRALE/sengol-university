@@ -20,7 +20,7 @@ const campusActivities = [
     title: "Student Life",
     description: "Experience vibrant campus community with diverse student activities",
     icon: FaUsers,
-    gradient: "from-[#D4AF37] to-[#B8860B]",
+    gradient: "from-[#ad4a16] via-[#8f3a17] to-[#312518]",
     link: "#", // Replace with actual link
   },
   {
@@ -29,7 +29,7 @@ const campusActivities = [
     title: "Arts & Culture",
     description: "Explore creative expression through various cultural programs",
     icon: FaPalette,
-    gradient: "from-[#B8860B] to-[#CD853F]",
+    gradient: "from-[#8f3a17] to-[#312518]",
     link: "#", // Replace with actual link
   },
   {
@@ -38,7 +38,7 @@ const campusActivities = [
     title: "Recreation & Wellness",
     description: "Maintain physical and mental wellness through our facilities",
     icon: FaHeartbeat,
-    gradient: "from-[#CD853F] to-[#A0522D]",
+    gradient: "from-[#8f3a17] to-[#312518]",
     link: "#", // Replace with actual link
   },
 ];
@@ -48,8 +48,8 @@ const CampusLife = () => {
     <section className="campus py-16 sm:py-20 md:py-24 lg:py-32 relative overflow-hidden bg-gradient-to-br from-[#1a1a1a] via-[#2d2d2d] to-[#0f0f0f]">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-32 -left-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-[#D4AF37]/20 via-[#B8860B]/15 to-transparent blur-3xl"></div>
-        <div className="absolute -bottom-32 -right-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-tl from-[#CD853F]/15 via-[#A0522D]/10 to-transparent blur-3xl"></div>
+        <div className="absolute -top-32 -left-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-[#ad4a16]/20 via-[#8f3a17]/15 to-transparent blur-3xl"></div>
+        <div className="absolute -bottom-32 -right-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-tl from-[#8f3a17]/15 via-[#312518]/10 to-transparent blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] bg-gradient-to-r from-[#D4AF37]/10 to-[#B8860B]/10 rounded-full blur-2xl"></div>
       </div>
 
@@ -62,9 +62,9 @@ const CampusLife = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
-            <FaUsers className="text-[#D4AF37] text-lg lg:text-xl xl:text-2xl" />
-            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
+          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#ad4a16]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
+            <FaUsers className="text-[#ad4a16] text-lg lg:text-xl xl:text-2xl" />
+            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent uppercase tracking-wider">
               Student Experience
             </span>
           </div>
@@ -72,7 +72,7 @@ const CampusLife = () => {
             A dynamic and engaging community of students, faculty, and alumni, fostering innovation and excellence at Sengol International University.
           </p>
           <h2 className="rts__section--wrapper--title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight">
-            Campus <span className="bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent"> Life</span>
+            Campus <span className="bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent"> Life</span>
           </h2>
         </motion.div>
 
@@ -88,7 +88,7 @@ const CampusLife = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               whileHover={{ y: -10 }}
             >
-              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500 lg:hover:scale-105">
+              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#ad4a16]/20 shadow-xl hover:shadow-2xl hover:border-[#ad4a16]/40 transition-all duration-500 lg:hover:scale-105">
                 <Link href={activity.link}>
                   <div className="campus__single--item--thumb w-full h-64 md:h-72 lg:h-80 xl:h-96 2xl:h-[28rem] relative overflow-hidden">
                     <Image
@@ -128,7 +128,7 @@ const CampusLife = () => {
                     className="group/link block"
                   >
                     <div className="flex items-center justify-between">
-                      <h5 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white group-hover/link:text-[#D4AF37] transition-colors duration-300">
+                      <h5 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white group-hover/link:text-[#ad4a16] transition-colors duration-300">
                         {activity.title}
                       </h5>
                       <div className={`w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-gradient-to-r ${activity.gradient} rounded-full flex items-center justify-center group-hover/link:scale-110 transition-transform duration-300`}>

@@ -1,93 +1,186 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import ViceChairmanImage from "../../../../public/images/faculty/01.jpg"; // Replace with real image or placeholder
+import { motion } from "framer-motion";
+import ViceChairmanImage from "../../../../public/images/faculty/01.jpg";
 
 const ViceChancellorMessage = () => {
+  const messagePoints = [
+    {
+      icon: "🎓",
+      title: "Transformative Education",
+      content: "It gives me immense pleasure to welcome you to Sengol International University, a place where knowledge meets purpose, and where young minds are transformed into leaders of tomorrow."
+    },
+    {
+      icon: "🌟",
+      title: "Student-Centric Approach",
+      content: "In today's rapidly evolving global landscape, higher education must transcend traditional boundaries. At Sengol International University, we are deeply committed to delivering a comprehensive and transformative education. Our approach is student-centric, innovation-driven, and ethically grounded."
+    },
+    {
+      icon: "💡",
+      title: "Dynamic Programs",
+      content: "Our university offers a dynamic range of programs across various disciplines, designed to equip students with critical thinking skills, practical experience, and a lifelong love for learning. We believe in the integration of technology, research, and interdisciplinary approaches."
+    },
+    {
+      icon: "🏔️",
+      title: "Ideal Learning Environment",
+      content: "Located in the peaceful and ecologically rich state of Sikkim, our campus is an oasis for learning and reflection. With world-class infrastructure, advanced laboratories, and smart classrooms, we provide a setting that supports both academic and personal development."
+    },
+    {
+      icon: "🤝",
+      title: "Global Citizens",
+      content: "Our mission is to cultivate global citizens who are not only competent professionals but also compassionate and socially responsible individuals. We emphasize experiential learning, social engagement, entrepreneurial spirit, and a commitment to sustainability."
+    },
+    {
+      icon: "🌍",
+      title: "International Partnerships",
+      content: "International partnerships and industry collaborations further enrich our academic fabric, offering students and faculty the opportunity to engage in cutting-edge research, global internships, and cross-cultural exchange programs."
+    },
+    {
+      icon: "🎯",
+      title: "Educational Distinction",
+      content: "As Vice Chancellor, I am honored to lead this vibrant institution into a new era of educational distinction. I invite all aspiring students, scholars, and collaborators to join us in our journey toward academic innovation, global relevance, and societal impact."
+    }
+  ];
+
   return (
-    <div className="bg-white p-6 md:p-10 rounded-lg shadow-md space-y-10">
-      <div className="flex flex-col lg:flex-row items-start gap-8">
-        {/* <div className="w-full lg:w-1/3">
-          <Image
-            src={ViceChairmanImage}
-            alt="Vice Chairman"
-            className="rounded-lg shadow-md w-full object-cover"
-          />
-        </div> */}
+    <div className="bg-gradient-to-br from-white/95 to-white/85 backdrop-blur-sm rounded-3xl shadow-xl border border-[#ad4a16]/20 p-8 lg:p-10 xl:p-12 2xl:p-14 relative overflow-hidden">
 
-        <div className="flex-1">
-          <h1 className="text-3xl font-extrabold text-[#5b4110] mb-4">
-            Message from the Vice Chancellor
-          </h1>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            It gives me immense pleasure to welcome you to Sengol International
-            University, a place where knowledge meets purpose, and where young
-            minds are transformed into leaders of tomorrow.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            In today’s rapidly evolving global landscape, higher education must
-            transcend traditional boundaries. At Sengol International
-            University, we are deeply committed to delivering a comprehensive
-            and transformative education. Our approach is student-centric,
-            innovation-driven, and ethically grounded. We seek to create an
-            environment that fosters not only academic excellence but also
-            character, creativity, and leadership.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Our university offers a dynamic range of programs across various
-            disciplines, designed to equip students with critical thinking
-            skills, practical experience, and a lifelong love for learning. We
-            believe in the integration of technology, research, and
-            interdisciplinary approaches to ensure that our graduates are
-            well-prepared to face the challenges of the modern world.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Located in the peaceful and ecologically rich state of Sikkim, our
-            campus is an oasis for learning and reflection. With world-class
-            infrastructure, advanced laboratories, and smart classrooms, we
-            provide a setting that supports both academic and personal
-            development. We also take pride in our strong faculty, whose
-            dedication, experience, and mentorship are the pillars of our
-            academic excellence.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Our mission is to cultivate global citizens who are not only
-            competent professionals but also compassionate and socially
-            responsible individuals. To that end, we emphasize experiential
-            learning, social engagement, entrepreneurial spirit, and a
-            commitment to sustainability and inclusiveness.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            International partnerships and industry collaborations further
-            enrich our academic fabric, offering students and faculty the
-            opportunity to engage in cutting-edge research, global internships,
-            and cross-cultural exchange programs.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            As Vice Chancellor, I am honored to lead this vibrant institution
-            into a new era of educational distinction. I invite all aspiring
-            students, scholars, and collaborators to join us in our journey
-            toward academic innovation, global relevance, and societal impact.
-          </p>
-          <p className="text-gray-700 leading-relaxed">
-            Let us work together to build a university that not only imparts
-            knowledge but inspires change.
-          </p>
-
-          <div className="mt-6">
-            <span>With warm regards,</span>
-            <p className="text-sm text-gray-600">
-              Vice Chancellor
-              <br /> Sengol International University, Sikkim
-            </p>
-          </div>
-        </div>
+      {/* Enhanced background elements */}
+      <div className="absolute inset-0 pointer-events-none opacity-5">
+        <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-[#ad4a16] to-[#8f3a17] rounded-full blur-2xl"></div>
+        <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-gradient-to-tl from-[#8f3a17] to-[#312518] rounded-full blur-2xl"></div>
       </div>
 
-      <div className="bg-[#f3eadf] p-6 rounded-lg shadow-inner text-center">
-        <p className="text-lg font-semibold text-[#5b4110]">
-          “We educate not only minds, but hearts — to lead with purpose and
-          passion.”
-        </p>
+      <div className="relative space-y-12 lg:space-y-16 xl:space-y-20">
+
+        {/* Enhanced Header */}
+        <motion.div
+          className="text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          {/* Enhanced Badge */}
+          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#ad4a16]/20 via-[#8f3a17]/15 to-[#312518]/20 backdrop-blur-sm border border-[#ad4a16]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8">
+            <div className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center">
+              <span className="text-white text-lg lg:text-xl xl:text-2xl">🎓</span>
+            </div>
+            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent uppercase tracking-wider">
+              Academic Leadership
+            </span>
+          </div>
+
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-6 lg:mb-8 xl:mb-10 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent leading-tight">
+            Message from the Vice Chancellor
+          </h1>
+        </motion.div>
+
+        {/* Enhanced Profile Section */}
+        <motion.div
+          className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 xl:gap-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          {/* Vice Chancellor Image Placeholder */}
+          <div className="w-full lg:w-80 xl:w-96 2xl:w-[28rem] flex-shrink-0">
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-3xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+              <div className="relative bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl p-6 lg:p-8 xl:p-10 shadow-xl border border-[#ad4a16]/20">
+                <div className="w-full aspect-[4/5] bg-gradient-to-br from-[#ad4a16]/10 via-[#8f3a17]/5 to-[#312518]/10 rounded-2xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-20 h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
+                      <span className="text-white text-3xl lg:text-4xl xl:text-5xl">👨‍🏫</span>
+                    </div>
+                    <h3 className="text-lg lg:text-xl xl:text-2xl font-bold text-gray-800 mb-2">
+                      Vice Chancellor
+                    </h3>
+                    <p className="text-sm lg:text-base xl:text-lg text-gray-600">
+                      Sengol International University
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Welcome Message */}
+          <div className="flex-1">
+            <div className="bg-gradient-to-r from-[#ad4a16]/5 via-[#8f3a17]/5 to-[#312518]/5 rounded-2xl lg:rounded-3xl p-6 lg:p-8 xl:p-10 border border-[#ad4a16]/10 mb-8 lg:mb-10 xl:mb-12">
+              <p className="text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-700 leading-relaxed italic">
+                "Let us work together to build a university that not only imparts knowledge but inspires change."
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Enhanced Message Content */}
+        <div className="space-y-6 lg:space-y-8 xl:space-y-10">
+          {messagePoints.map((point, index) => (
+            <motion.div
+              key={index}
+              className="group bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl lg:rounded-3xl p-6 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl border border-[#ad4a16]/10 hover:border-[#ad4a16]/30 transition-all duration-500 hover:scale-102"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+            >
+              <div className="flex items-start gap-4 lg:gap-6 xl:gap-8">
+                <div className="w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                  <span className="text-white text-xl lg:text-2xl xl:text-3xl">{point.icon}</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 mb-3 lg:mb-4 xl:mb-5 group-hover:text-[#ad4a16] transition-colors duration-300">
+                    {point.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed text-base lg:text-lg xl:text-xl">
+                    {point.content}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Enhanced Signature Section */}
+        <motion.div
+          className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl lg:rounded-3xl p-6 lg:p-8 xl:p-10 shadow-lg border border-[#ad4a16]/20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          <div className="text-center lg:text-left">
+            <p className="text-base lg:text-lg xl:text-xl text-gray-700 mb-4 lg:mb-6">
+              With warm regards,
+            </p>
+            <div className="space-y-2">
+              <p className="text-lg lg:text-xl xl:text-2xl font-bold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent">
+                Vice Chancellor
+              </p>
+              <p className="text-sm lg:text-base xl:text-lg text-gray-600">
+                Sengol International University, Sikkim
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Enhanced Quote Section */}
+        <motion.div
+          className="bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-2xl lg:rounded-3xl p-8 lg:p-10 xl:p-12 text-center text-white shadow-2xl"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
+        >
+          <div className="max-w-4xl mx-auto">
+            <div className="w-16 h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 lg:mb-8">
+              <span className="text-white text-2xl lg:text-3xl xl:text-4xl">❤️</span>
+            </div>
+            <blockquote className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold leading-relaxed italic">
+              "We educate not only minds, but hearts — to lead with purpose and passion."
+            </blockquote>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

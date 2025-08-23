@@ -75,8 +75,8 @@ const AcademicPrograms = () => {
     <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-gradient-to-br from-[#fffaf2] via-white to-[#f7f1e6] relative overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-32 -left-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-[#D4AF37]/15 via-[#B8860B]/10 to-transparent blur-3xl"></div>
-        <div className="absolute -bottom-32 -right-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-tl from-[#CD853F]/12 via-[#A0522D]/8 to-transparent blur-3xl"></div>
+        <div className="absolute -top-32 -left-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-[#ad4a16]/15 via-[#8f3a17]/10 to-transparent blur-3xl"></div>
+        <div className="absolute -bottom-32 -right-32 w-[40rem] h-[40rem] rounded-full bg-gradient-to-tl from-[#8f3a17]/12 via-[#312518]/8 to-transparent blur-3xl"></div>
       </div>
 
       <div className="mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20 max-w-[1400px] relative">
@@ -88,13 +88,13 @@ const AcademicPrograms = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
-            <FaNewspaper className="text-[#D4AF37] text-lg lg:text-xl xl:text-2xl" />
-            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
+          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#ad4a16]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
+            <FaNewspaper className="text-[#ad4a16] text-lg lg:text-xl xl:text-2xl" />
+            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent uppercase tracking-wider">
               Stay Updated
             </span>
           </div>
-          <h2 className="rts__section--title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold bg-gradient-to-r from-[#D4AF37] via-[#B8860B] to-[#D4AF37] bg-clip-text text-transparent mb-6 lg:mb-8 xl:mb-10 leading-tight">
+          <h2 className="rts__section--title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent mb-6 lg:mb-8 xl:mb-10 leading-tight">
             Latest Updates
           </h2>
           <p className="text-gray-600 max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-relaxed">
@@ -107,7 +107,7 @@ const AcademicPrograms = () => {
 
           {/* Enhanced UNIVERSITY NEWS Section */}
           <motion.div
-            className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl shadow-xl border border-[#D4AF37]/20 p-6 lg:p-8 xl:p-10 hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500 lg:hover:scale-105"
+            className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl shadow-xl border border-[#ad4a16]/20 p-6 lg:p-8 xl:p-10 hover:shadow-2xl hover:border-[#ad4a16]/40 transition-all duration-500 lg:hover:scale-105"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -116,18 +116,18 @@ const AcademicPrograms = () => {
             {/* Enhanced Header */}
             <div className="flex items-center justify-between mb-6 lg:mb-8 xl:mb-10">
               <div className="flex items-center gap-3 lg:gap-4">
-                <div className="w-10 h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-xl flex items-center justify-center">
                   <FaBullhorn className="text-white text-lg lg:text-xl xl:text-2xl" />
                 </div>
                 <h3 className="text-lg lg:text-xl xl:text-2xl font-bold text-gray-800">
-                  UNIVERSITY <span className="bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent">NEWS</span>
+                  UNIVERSITY <span className="bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent">NEWS</span>
                 </h3>
               </div>
-              <Link href="/news" className="bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white px-4 lg:px-5 xl:px-6 py-2 lg:py-2.5 xl:py-3 rounded-xl text-xs lg:text-sm xl:text-base font-bold hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 shadow-lg">
+              <Link href="/news" className="bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] text-white px-4 lg:px-5 xl:px-6 py-2 lg:py-2.5 xl:py-3 rounded-xl text-xs lg:text-sm xl:text-base font-bold hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 shadow-lg">
                 VIEW ALL
               </Link>
             </div>
-            <div className="h-1 lg:h-1.5 xl:h-2 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full mb-6 lg:mb-8 xl:mb-10 shadow-sm"></div>
+            <div className="h-1 lg:h-1.5 xl:h-2 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full mb-6 lg:mb-8 xl:mb-10 shadow-sm"></div>
 
             {/* Enhanced News Items - Scrollable */}
             <div className="space-y-4 lg:space-y-5 xl:space-y-6 max-h-80 lg:max-h-96 xl:max-h-[28rem] overflow-y-auto custom-scrollbar pr-2">
@@ -140,20 +140,20 @@ const AcademicPrograms = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                 >
-                  <div className="bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white text-center py-2 lg:py-2.5 xl:py-3 px-3 lg:px-4 xl:px-5 rounded-xl font-bold text-xs lg:text-sm xl:text-base min-w-[60px] lg:min-w-[70px] xl:min-w-[80px] shadow-lg">
+                  <div className="bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] text-white text-center py-2 lg:py-2.5 xl:py-3 px-3 lg:px-4 xl:px-5 rounded-xl font-bold text-xs lg:text-sm xl:text-base min-w-[60px] lg:min-w-[70px] xl:min-w-[80px] shadow-lg">
                     {item.date}
                   </div>
                   <div className="flex-1">
-                    <p className="text-gray-700 text-sm lg:text-base xl:text-lg leading-relaxed font-medium group-hover:text-[#B8860B] transition-colors duration-300">{item.title}</p>
+                    <p className="text-gray-700 text-sm lg:text-base xl:text-lg leading-relaxed font-medium group-hover:text-[#8f3a17] transition-colors duration-300">{item.title}</p>
                     {item.hasDownload && (
-                      <button className="mt-2 lg:mt-3 xl:mt-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white px-3 lg:px-4 xl:px-5 py-1.5 lg:py-2 xl:py-2.5 rounded-lg text-xs lg:text-sm xl:text-base flex items-center gap-2 hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
+                      <button className="mt-2 lg:mt-3 xl:mt-4 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] text-white px-3 lg:px-4 xl:px-5 py-1.5 lg:py-2 xl:py-2.5 rounded-lg text-xs lg:text-sm xl:text-base flex items-center gap-2 hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
                         <FaDownload size={10} className="lg:w-3 lg:h-3 xl:w-4 xl:h-4" />
                         Download
                       </button>
                     )}
                   </div>
                   {index < newsData.length - 1 && (
-                    <div className="absolute left-[30px] top-[50px] w-0.5 h-6 bg-gradient-to-b from-[#D4AF37] to-[#B8860B] opacity-30"></div>
+                    <div className="absolute left-[30px] top-[50px] w-0.5 h-6 bg-gradient-to-b from-[#ad4a16] via-[#8f3a17] to-[#312518] opacity-30"></div>
                   )}
                 </motion.div>
               ))}
@@ -162,7 +162,7 @@ const AcademicPrograms = () => {
 
           {/* Enhanced NOTICE BOARD Section */}
           <motion.div
-            className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl shadow-xl border border-[#D4AF37]/20 p-6 lg:p-8 xl:p-10 hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500 lg:hover:scale-105"
+            className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl shadow-xl border border-[#ad4a16]/20 p-6 lg:p-8 xl:p-10 hover:shadow-2xl hover:border-[#ad4a16]/40 transition-all duration-500 lg:hover:scale-105"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -171,18 +171,18 @@ const AcademicPrograms = () => {
             {/* Enhanced Header */}
             <div className="flex items-center justify-between mb-6 lg:mb-8 xl:mb-10">
               <div className="flex items-center gap-3 lg:gap-4">
-                <div className="w-10 h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 bg-gradient-to-r from-[#B8860B] to-[#CD853F] rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 bg-gradient-to-r from-[#8f3a17] to-[#312518] rounded-xl flex items-center justify-center">
                   <FaQuestion className="text-white text-lg lg:text-xl xl:text-2xl" />
                 </div>
                 <h3 className="text-lg lg:text-xl xl:text-2xl font-bold text-gray-800">
-                  NOTICE <span className="bg-gradient-to-r from-[#B8860B] to-[#CD853F] bg-clip-text text-transparent">BOARD</span>
+                  NOTICE <span className="bg-gradient-to-r from-[#8f3a17] to-[#312518] bg-clip-text text-transparent">BOARD</span>
                 </h3>
               </div>
-              <Link href="/notices" className="bg-gradient-to-r from-[#B8860B] to-[#CD853F] text-white px-4 lg:px-5 xl:px-6 py-2 lg:py-2.5 xl:py-3 rounded-xl text-xs lg:text-sm xl:text-base font-bold hover:from-[#CD853F] hover:to-[#B8860B] transition-all duration-300 shadow-lg">
+              <Link href="/notices" className="bg-gradient-to-r from-[#8f3a17] to-[#312518] text-white px-4 lg:px-5 xl:px-6 py-2 lg:py-2.5 xl:py-3 rounded-xl text-xs lg:text-sm xl:text-base font-bold hover:from-[#CD853F] hover:to-[#B8860B] transition-all duration-300 shadow-lg">
                 VIEW ALL
               </Link>
             </div>
-            <div className="h-1 lg:h-1.5 xl:h-2 bg-gradient-to-r from-[#B8860B] to-[#CD853F] rounded-full mb-6 lg:mb-8 xl:mb-10 shadow-sm"></div>
+            <div className="h-1 lg:h-1.5 xl:h-2 bg-gradient-to-r from-[#8f3a17] to-[#312518] rounded-full mb-6 lg:mb-8 xl:mb-10 shadow-sm"></div>
 
             {/* Enhanced Notice Items */}
             <div className="space-y-3 lg:space-y-4 xl:space-y-5 max-h-80 lg:max-h-96 xl:max-h-[28rem] overflow-y-auto custom-scrollbar pr-2">
@@ -195,12 +195,12 @@ const AcademicPrograms = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                 >
-                  <div className="bg-gradient-to-r from-[#B8860B] to-[#CD853F] text-white p-1.5 lg:p-2 xl:p-2.5 rounded-lg mt-0.5 shadow-md">
+                  <div className="bg-gradient-to-r from-[#8f3a17] to-[#312518] text-white p-1.5 lg:p-2 xl:p-2.5 rounded-lg mt-0.5 shadow-md">
                     <FaMinus size={8} className="lg:w-3 lg:h-3 xl:w-4 xl:h-4" />
                   </div>
-                  <p className="text-gray-700 text-sm lg:text-base xl:text-lg leading-relaxed flex-1 font-medium group-hover:text-[#CD853F] transition-colors duration-300">{notice}</p>
+                  <p className="text-gray-700 text-sm lg:text-base xl:text-lg leading-relaxed flex-1 font-medium group-hover:text-[#8f3a17] transition-colors duration-300">{notice}</p>
                   {index < noticeData.length - 1 && (
-                    <div className="absolute left-[12px] lg:left-[14px] xl:left-[16px] top-[30px] lg:top-[35px] xl:top-[40px] w-0.5 h-4 lg:h-5 xl:h-6 bg-gradient-to-b from-[#B8860B] to-[#CD853F] opacity-30"></div>
+                    <div className="absolute left-[12px] lg:left-[14px] xl:left-[16px] top-[30px] lg:top-[35px] xl:top-[40px] w-0.5 h-4 lg:h-5 xl:h-6 bg-gradient-to-b from-[#8f3a17] to-[#312518] opacity-30"></div>
                   )}
                 </motion.div>
               ))}
@@ -209,7 +209,7 @@ const AcademicPrograms = () => {
 
           {/* Enhanced EVENTS Section */}
           <motion.div
-            className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl shadow-xl border border-[#D4AF37]/20 p-6 lg:p-8 xl:p-10 hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-500 lg:hover:scale-105"
+            className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-3xl shadow-xl border border-[#ad4a16]/20 p-6 lg:p-8 xl:p-10 hover:shadow-2xl hover:border-[#ad4a16]/40 transition-all duration-500 lg:hover:scale-105"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -218,22 +218,22 @@ const AcademicPrograms = () => {
             {/* Enhanced Header */}
             <div className="flex items-center justify-between mb-6 lg:mb-8 xl:mb-10">
               <div className="flex items-center gap-3 lg:gap-4">
-                <div className="w-10 h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 bg-gradient-to-r from-[#CD853F] to-[#A0522D] rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 bg-gradient-to-r from-[#8f3a17] to-[#312518] rounded-xl flex items-center justify-center">
                   <FaCalendarAlt className="text-white text-lg lg:text-xl xl:text-2xl" />
                 </div>
                 <h3 className="text-lg lg:text-xl xl:text-2xl font-bold text-gray-800">
-                  <span className="bg-gradient-to-r from-[#CD853F] to-[#A0522D] bg-clip-text text-transparent">EVENTS</span>
+                  <span className="bg-gradient-to-r from-[#8f3a17] to-[#312518] bg-clip-text text-transparent">EVENTS</span>
                 </h3>
               </div>
-              <Link href="/events" className="bg-gradient-to-r from-[#CD853F] to-[#A0522D] text-white px-4 lg:px-5 xl:px-6 py-2 lg:py-2.5 xl:py-3 rounded-xl text-xs lg:text-sm xl:text-base font-bold hover:from-[#A0522D] hover:to-[#CD853F] transition-all duration-300 shadow-lg">
+              <Link href="/events" className="bg-gradient-to-r from-[#8f3a17] to-[#312518] text-white px-4 lg:px-5 xl:px-6 py-2 lg:py-2.5 xl:py-3 rounded-xl text-xs lg:text-sm xl:text-base font-bold hover:from-[#A0522D] hover:to-[#CD853F] transition-all duration-300 shadow-lg">
                 VIEW ALL
               </Link>
             </div>
-            <div className="h-1 lg:h-1.5 xl:h-2 bg-gradient-to-r from-[#CD853F] to-[#A0522D] rounded-full mb-6 lg:mb-8 xl:mb-10 shadow-sm"></div>
+            <div className="h-1 lg:h-1.5 xl:h-2 bg-gradient-to-r from-[#8f3a17] to-[#312518] rounded-full mb-6 lg:mb-8 xl:mb-10 shadow-sm"></div>
 
             {/* Enhanced Event Display */}
             <div className="bg-gradient-to-br from-white/50 to-white/30 rounded-2xl overflow-hidden shadow-lg">
-              <div className="relative h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#CD853F]">
+              <div className="relative h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-[#ad4a16] via-[#8f3a17] to-[#312518]">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent flex items-center justify-center">
                   <div className="text-white text-center">
                     <div className="text-xl lg:text-2xl xl:text-3xl font-bold mb-2 lg:mb-3 xl:mb-4 drop-shadow-lg">{eventData.title}</div>
@@ -248,7 +248,7 @@ const AcademicPrograms = () => {
                 <h4 className="font-bold text-gray-800 mb-2 lg:mb-3 xl:mb-4 text-base lg:text-lg xl:text-xl">{eventData.title}</h4>
                 <div className="flex items-center gap-3 lg:gap-4 xl:gap-5 text-gray-600">
                   <div className="flex items-center gap-2 lg:gap-3">
-                    <div className="w-6 h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 bg-gradient-to-r from-[#CD853F] to-[#A0522D] rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 bg-gradient-to-r from-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center">
                       <FaCalendarAlt className="text-white text-xs lg:text-sm xl:text-base" />
                     </div>
                     <span className="text-sm lg:text-base xl:text-lg font-medium">{eventData.date}</span>

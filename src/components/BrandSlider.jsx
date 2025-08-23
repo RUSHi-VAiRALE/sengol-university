@@ -82,24 +82,24 @@ const BrandSlider = () => {
     <div className="rts-brand v_1 py-16 md:py-20 lg:py-28 xl:py-36 2xl:py-44 bg-gradient-to-br from-[#fffaf2] via-[#f8f4ec] to-[#f7f1e6] relative overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-32 -left-32 w-[45rem] h-[45rem] rounded-full bg-gradient-to-br from-[#D4AF37]/8 via-[#B8860B]/5 to-transparent blur-3xl"></div>
-        <div className="absolute -bottom-32 -right-32 w-[45rem] h-[45rem] rounded-full bg-gradient-to-tl from-[#CD853F]/6 via-[#A0522D]/3 to-transparent blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-gradient-to-r from-[#D4AF37]/4 to-[#B8860B]/3 rounded-full blur-2xl"></div>
+        <div className="absolute -top-32 -left-32 w-[45rem] h-[45rem] rounded-full bg-gradient-to-br from-[#ad4a16]/8 via-[#8f3a17]/5 to-transparent blur-3xl"></div>
+        <div className="absolute -bottom-32 -right-32 w-[45rem] h-[45rem] rounded-full bg-gradient-to-tl from-[#8f3a17]/6 via-[#312518]/3 to-transparent blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-gradient-to-r from-[#ad4a16]/4 to-[#8f3a17]/3 rounded-full blur-2xl"></div>
       </div>
       <div className="mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20 max-w-[1400px] relative">
         {/* Enhanced Section Title */}
         <div className="text-center mb-12 lg:mb-16 xl:mb-20 2xl:mb-24">
           {/* Enhanced Badge */}
-          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
-            <div className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center">
+          <div className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#ad4a16]/20 to-[#8f3a17]/20 backdrop-blur-sm border border-[#ad4a16]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full mb-6 lg:mb-8 xl:mb-10">
+            <div className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center">
               <span className="text-white text-lg lg:text-xl xl:text-2xl">🤝</span>
             </div>
-            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
+            <span className="text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent uppercase tracking-wider">
               Our Partners & Affiliations
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4 lg:mb-6 xl:mb-8 bg-gradient-to-r from-[#D4AF37] via-[#B8860B] to-[#D4AF37] bg-clip-text text-transparent leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4 lg:mb-6 xl:mb-8 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent leading-tight">
             Trusted Partners
           </h2>
           <p className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-700 max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto leading-relaxed">
@@ -109,16 +109,16 @@ const BrandSlider = () => {
 
         <div className="flex justify-center">
           <div className="w-full">
-            <div className="rts-brand-slider bg-gradient-to-r from-white/80 via-white/90 to-white/80 backdrop-blur-sm rounded-3xl lg:rounded-[2rem] xl:rounded-[2.5rem] p-8 lg:p-12 xl:p-16 2xl:p-20 border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div className="rts-brand-slider bg-gradient-to-r from-white/80 via-white/90 to-white/80 backdrop-blur-sm rounded-3xl lg:rounded-[2rem] xl:rounded-[2.5rem] p-8 lg:p-12 xl:p-16 2xl:p-20 border border-[#ad4a16]/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden">
               <Swiper {...swiperOptions} className="brand-swiper-enhanced overflow-visible">
                 {brands.map((brand) => (
                   <SwiperSlide key={brand.id}>
                     <div className="single-brand-logo flex justify-center items-center h-full py-4 lg:py-6 xl:py-8 relative">
                       <Link href={brand.link} className="group block">
-                        <div className="relative bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl lg:rounded-3xl p-6 lg:p-8 xl:p-10 2xl:p-12 border border-[#D4AF37]/10 hover:border-[#D4AF37]/30 shadow-lg transform transition-transform duration-500 hover:scale-105 z-10">
+                        <div className="relative bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl lg:rounded-3xl p-6 lg:p-8 xl:p-10 2xl:p-12 border border-[#ad4a16]/10 hover:border-[#ad4a16]/30 shadow-lg transform transition-transform duration-500 hover:scale-105 z-10">
                           {/* Decorative corner elements */}
-                          <div className="absolute top-0 left-0 w-4 h-4 lg:w-6 lg:h-6 bg-gradient-to-br from-[#D4AF37]/20 to-transparent rounded-full"></div>
-                          <div className="absolute bottom-0 right-0 w-4 h-4 lg:w-6 lg:h-6 bg-gradient-to-tl from-[#B8860B]/20 to-transparent rounded-full"></div>
+                          <div className="absolute top-0 left-0 w-4 h-4 lg:w-6 lg:h-6 bg-gradient-to-br from-[#ad4a16]/20 to-transparent rounded-full"></div>
+                          <div className="absolute bottom-0 right-0 w-4 h-4 lg:w-6 lg:h-6 bg-gradient-to-tl from-[#8f3a17]/20 to-transparent rounded-full"></div>
 
                           <Image
                             src={brand.src}

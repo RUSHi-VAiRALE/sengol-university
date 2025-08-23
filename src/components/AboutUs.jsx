@@ -30,9 +30,9 @@ const AboutUs = () => {
     <section className="relative overflow-hidden py-16 sm:py-20 md:py-24 lg:py-32 bg-gradient-to-br from-[#fffaf2] via-white to-[#f7f1e6]">
       {/* Enhanced background accents with modern golden theme */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-32 -left-32 w-[32rem] h-[32rem] rounded-full bg-gradient-to-br from-[#D4AF37]/15 via-[#B8860B]/10 to-transparent blur-3xl"></div>
-        <div className="absolute -bottom-32 -right-32 w-[32rem] h-[32rem] rounded-full bg-gradient-to-tl from-[#CD853F]/12 via-[#A0522D]/8 to-transparent blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[20rem] h-[20rem] rounded-full bg-gradient-to-r from-[#D4AF37]/5 to-[#B8860B]/5 blur-2xl"></div>
+        <div className="absolute -top-32 -left-32 w-[32rem] h-[32rem] rounded-full bg-gradient-to-br from-[#ad4a16]/15 via-[#8f3a17]/10 to-transparent blur-3xl"></div>
+        <div className="absolute -bottom-32 -right-32 w-[32rem] h-[32rem] rounded-full bg-gradient-to-tl from-[#8f3a17]/12 via-[#312518]/8 to-transparent blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[20rem] h-[20rem] rounded-full bg-gradient-to-r from-[#ad4a16]/5 to-[#8f3a17]/5 blur-2xl"></div>
       </div>
       <div className="mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20 max-w-[1400px] relative">
         {" "}
@@ -49,8 +49,8 @@ const AboutUs = () => {
             <div className="relative flex items-center justify-center">
               {/* Main Image with Modern Styling */}
               <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#D4AF37]/20 via-[#B8860B]/20 to-[#D4AF37]/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
-                <div className="relative bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-sm rounded-3xl p-4 border border-[#D4AF37]/20 shadow-2xl">
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#ad4a16]/20 via-[#8f3a17]/20 to-[#312518]/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
+                <div className="relative bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-sm rounded-3xl p-4 border border-[#ad4a16]/20 shadow-2xl">
                   <img
                     src="/images/about/sengol-student.jpg"
                     alt="Sengol International University Students"
@@ -58,14 +58,14 @@ const AboutUs = () => {
                   />
 
                   {/* Floating Stats Cards */}
-                  <div className="absolute -top-6 -right-6 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-2xl p-4 lg:p-5 xl:p-6 shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                  <div className="absolute -top-6 -right-6 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-2xl p-4 lg:p-5 xl:p-6 shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
                     <div className="text-white text-center">
                       <div className="text-2xl lg:text-3xl xl:text-4xl font-bold">10K+</div>
                       <div className="text-xs lg:text-sm font-medium">Students</div>
                     </div>
                   </div>
 
-                  <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-[#B8860B] to-[#CD853F] rounded-2xl p-4 lg:p-5 xl:p-6 shadow-xl transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+                  <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-[#8f3a17] to-[#312518] rounded-2xl p-4 lg:p-5 xl:p-6 shadow-xl transform -rotate-3 hover:rotate-0 transition-transform duration-300">
                     <div className="text-white text-center">
                       <div className="text-2xl lg:text-3xl xl:text-4xl font-bold">50+</div>
                       <div className="text-xs lg:text-sm font-medium">Programs</div>
@@ -77,11 +77,11 @@ const AboutUs = () => {
               {/* Animated Circle with University Branding */}
               <div className="absolute top-1/2 right-4 lg:right-8 xl:right-12 -translate-y-1/2">
                 <div className="relative w-24 h-24 sm:w-32 sm:h-32 lg:w-44 lg:h-44 xl:w-52 xl:h-52 2xl:w-60 2xl:h-60">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full animate-pulse"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full animate-pulse"></div>
                   <div className="absolute inset-2 bg-white rounded-full flex items-center justify-center">
                     <div className="text-center">
-                      <FaGraduationCap className="text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#B8860B] mb-1 mx-auto" />
-                      <div className="text-xs lg:text-base xl:text-lg font-bold text-[#B8860B]">2025</div>
+                      <FaGraduationCap className="text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#8f3a17] mb-1 mx-auto" />
+                      <div className="text-xs lg:text-base xl:text-lg font-bold text-[#8f3a17]">2025</div>
                     </div>
                   </div>
 
@@ -95,7 +95,7 @@ const AboutUs = () => {
                       />
                     </defs>
                     <text
-                      fill="#B8860B"
+                      fill="#8f3a17"
                       fontSize="8"
                       fontWeight="600"
                       className="uppercase tracking-wider"
@@ -121,23 +121,23 @@ const AboutUs = () => {
             <div className="about__right--content space-y-6 lg:space-y-10 xl:space-y-12 2xl:space-y-14">
               {/* Subtitle Badge */}
               <motion.div
-                className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 backdrop-blur-sm border border-[#D4AF37]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full"
+                className="inline-flex items-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#ad4a16]/20 to-[#8f3a17]/20 backdrop-blur-sm border border-[#ad4a16]/30 px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-full"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <div className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center">
                   <FaGraduationCap className="text-white text-sm lg:text-base xl:text-lg" />
                 </div>
-                <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent uppercase tracking-wider">
+                <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent uppercase tracking-wider">
                   Nurturing Talent with Excellence
                 </span>
               </motion.div>
 
               {/* Main Title */}
               <motion.h2
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight bg-gradient-to-r from-[#D4AF37] via-[#B8860B] to-[#D4AF37] bg-clip-text text-transparent"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -171,15 +171,15 @@ const AboutUs = () => {
               >
                 {/* Mission Card */}
                 <motion.div
-                  className="group bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl p-6 lg:p-8 xl:p-10 2xl:p-12 border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-300"
+                  className="group bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl p-6 lg:p-8 xl:p-10 2xl:p-12 border border-[#ad4a16]/20 shadow-xl hover:shadow-2xl hover:border-[#ad4a16]/40 transition-all duration-300"
                   whileHover={{ scale: 1.02, y: -5 }}
                 >
                   <div className="flex items-start gap-4 lg:gap-6 xl:gap-8">
-                    <div className="flex-shrink-0 w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex-shrink-0 w-12 h-12 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <FaUsers className="text-white text-lg lg:text-xl xl:text-2xl" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800 mb-2 lg:mb-3 xl:mb-4 group-hover:text-[#B8860B] transition-colors">
+                      <h3 className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800 mb-2 lg:mb-3 xl:mb-4 group-hover:text-[#8f3a17] transition-colors">
                         Our Mission
                       </h3>
                       <p className="text-sm lg:text-base xl:text-lg 2xl:text-xl text-gray-600 leading-relaxed">
@@ -191,7 +191,7 @@ const AboutUs = () => {
 
                 {/* Vision Card */}
                 <motion.div
-                  className="group bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl p-6 lg:p-8 xl:p-10 2xl:p-12 border border-[#D4AF37]/20 shadow-xl hover:shadow-2xl hover:border-[#D4AF37]/40 transition-all duration-300"
+                  className="group bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm rounded-2xl p-6 lg:p-8 xl:p-10 2xl:p-12 border border-[#ad4a16]/20 shadow-xl hover:shadow-2xl hover:border-[#ad4a16]/40 transition-all duration-300"
                   whileHover={{ scale: 1.02, y: -5 }}
                 >
                   <div className="flex items-start gap-4 lg:gap-6 xl:gap-8">
@@ -199,7 +199,7 @@ const AboutUs = () => {
                       <FaAward className="text-white text-lg lg:text-xl xl:text-2xl" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800 mb-2 lg:mb-3 xl:mb-4 group-hover:text-[#B8860B] transition-colors">
+                      <h3 className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800 mb-2 lg:mb-3 xl:mb-4 group-hover:text-[#8f3a17] transition-colors">
                         Our Vision
                       </h3>
                       <p className="text-sm lg:text-base xl:text-lg 2xl:text-xl text-gray-600 leading-relaxed">
@@ -218,7 +218,7 @@ const AboutUs = () => {
               >
                 <Link
                   href="/about"
-                  className="group inline-flex items-center gap-4 lg:gap-6 xl:gap-8 px-8 lg:px-10 xl:px-12 2xl:px-14 py-4 lg:py-5 xl:py-6 2xl:py-7 rounded-2xl text-white font-bold text-lg lg:text-xl xl:text-2xl 2xl:text-3xl bg-gradient-to-r from-[#D4AF37] to-[#B8860B] hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 border border-[#D4AF37]/30"
+                  className="group inline-flex items-center gap-4 lg:gap-6 xl:gap-8 px-8 lg:px-10 xl:px-12 2xl:px-14 py-4 lg:py-5 xl:py-6 2xl:py-7 rounded-2xl text-white font-bold text-lg lg:text-xl xl:text-2xl 2xl:text-3xl bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 border border-[#ad4a16]/30"
                 >
                   <span className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">📚</span>
                   Learn More About Us

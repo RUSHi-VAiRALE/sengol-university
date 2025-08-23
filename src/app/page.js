@@ -78,7 +78,7 @@ export default function Home() {
       <BrandSlider />
 
       {/* Footer */}
-      <footer className=" bg-gray-900 text-white">
+      <footer className="bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-white">
         <Footer />
         <ScrollToTop />
       </footer>
