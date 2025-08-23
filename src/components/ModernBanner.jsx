@@ -26,7 +26,7 @@ const ModernBanner = () => {
     const bannerSlides = [
         {
             id: 1,
-            image: "/images/banner/slider2.jpg",
+            image: "https://cdn.pixabay.com/photo/2020/01/09/03/43/mansion-4751778_1280.jpg",
             title: "Shape Your Future with Excellence",
             subtitle: "Discover world-class education at Sengol International University",
             description: "Join thousands of students who have transformed their lives through our innovative programs and expert faculty.",
@@ -40,7 +40,7 @@ const ModernBanner = () => {
         },
         {
             id: 2,
-            image: "/images/banner/02.jpg",
+            image: "https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg",
             title: "Innovation Meets Tradition",
             subtitle: "Where academic excellence creates tomorrow's leaders",
             description: "Experience cutting-edge facilities, renowned faculty, and a vibrant campus life that prepares you for global success.",
