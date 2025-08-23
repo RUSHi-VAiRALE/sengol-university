@@ -59,8 +59,8 @@ const ModernBanner = () => {
             title: "Admission 2025",
             subtitle: "Apply Now",
             href: "/admission/admission-procedure",
-            color: "from-[#D4AF37] to-[#B8860B]",
-            hoverColor: "hover:from-[#B8860B] hover:to-[#D4AF37]",
+            color: "from-[#ad4a16] via-[#8f3a17] to-[#312518]",
+            hoverColor: "hover:from-[#312518] hover:via-[#8f3a17] hover:to-[#ad4a16]",
             icon: FaGraduationCap,
             emoji: "🎓"
         },
@@ -68,8 +68,8 @@ const ModernBanner = () => {
             title: "Virtual Tour",
             subtitle: "Explore Campus",
             href: "#",
-            color: "from-[#CD853F] to-[#A0522D]",
-            hoverColor: "hover:from-[#A0522D] hover:to-[#CD853F]",
+            color: "from-[#ad4a16] via-[#8f3a17] to-[#312518]",
+            hoverColor: "hover:from-[#312518] hover:via-[#8f3a17] hover:to-[#ad4a16]",
             icon: FaPlay,
             emoji: "🏛️"
         },
@@ -77,8 +77,8 @@ const ModernBanner = () => {
             title: "Scholarships",
             subtitle: "Learn More",
             href: "#",
-            color: "from-[#B8860B] to-[#8B6914]",
-            hoverColor: "hover:from-[#8B6914] hover:to-[#B8860B]",
+            color: "from-[#ad4a16] via-[#8f3a17] to-[#312518]",
+            hoverColor: "hover:from-[#312518] hover:via-[#8f3a17] hover:to-[#ad4a16]",
             icon: FaAward,
             emoji: "🏆"
         }
@@ -118,7 +118,7 @@ const ModernBanner = () => {
                                 />
                                 {/* Enhanced Gradient Overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#D4AF37]/10 via-transparent to-[#B8860B]/10" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#ad4a16]/10 via-transparent to-[#8f3a17]/10" />
                             </div>
 
                             {/* Enhanced Content */}
@@ -138,11 +138,11 @@ const ModernBanner = () => {
                                                 animate={{ opacity: 1, x: 0 }}
                                                 transition={{ duration: 0.6, delay: 0.4 }}
                                             >
-                                                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center shadow-lg">
+                                                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center shadow-lg">
                                                     <FaGraduationCap className="text-white text-lg sm:text-xl lg:text-2xl xl:text-3xl" />
                                                 </div>
-                                                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-[#D4AF37]/30 px-4 lg:px-6 xl:px-8 py-2 lg:py-3 xl:py-4 rounded-full">
-                                                    <span className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent">
+                                                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-[#ad4a16]/30 px-4 lg:px-6 xl:px-8 py-2 lg:py-3 xl:py-4 rounded-full">
+                                                    <span className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent">
                                                         {slide.subtitle}
                                                     </span>
                                                 </div>
@@ -180,15 +180,15 @@ const ModernBanner = () => {
                                                 {slide.stats.map((stat, statIndex) => (
                                                     <motion.div
                                                         key={statIndex}
-                                                        className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-[#D4AF37]/30 rounded-2xl lg:rounded-3xl p-4 sm:p-5 lg:p-6 xl:p-8 2xl:p-10 hover:border-[#D4AF37]/50 transition-all duration-300 group"
+                                                        className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-[#ad4a16]/30 rounded-2xl lg:rounded-3xl p-4 sm:p-5 lg:p-6 xl:p-8 2xl:p-10 hover:border-[#ad4a16]/50 transition-all duration-300 group"
                                                         whileHover={{ scale: 1.05, y: -5 }}
                                                     >
                                                         <div className="flex items-center gap-4 lg:gap-6 xl:gap-8">
-                                                            <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-xl lg:rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
+                                                            <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-xl lg:rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
                                                                 <stat.icon className="text-white text-lg sm:text-xl lg:text-2xl xl:text-3xl" />
                                                             </div>
                                                             <div>
-                                                                <div className="text-xl sm:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent">{stat.value}</div>
+                                                                <div className="text-xl sm:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent">{stat.value}</div>
                                                                 <div className="text-xs sm:text-sm lg:text-base xl:text-lg text-gray-300 font-medium">{stat.label}</div>
                                                             </div>
                                                         </div>
@@ -205,7 +205,7 @@ const ModernBanner = () => {
                                             >
                                                 <Link
                                                     href={slide.ctaLink}
-                                                    className="group inline-flex items-center justify-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] hover:from-[#B8860B] hover:to-[#D4AF37] text-white px-6 sm:px-8 lg:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 lg:py-5 xl:py-6 2xl:py-8 rounded-2xl lg:rounded-3xl font-bold text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl border border-[#D4AF37]/30"
+                                                    className="group inline-flex items-center justify-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] hover:from-[#312518] hover:via-[#8f3a17] hover:to-[#ad4a16] text-white px-6 sm:px-8 lg:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 lg:py-5 xl:py-6 2xl:py-8 rounded-2xl lg:rounded-3xl font-bold text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl border border-[#ad4a16]/30"
                                                 >
                                                     <span className="text-lg sm:text-xl lg:text-2xl xl:text-3xl">🎓</span>
                                                     {slide.ctaText}
@@ -214,7 +214,7 @@ const ModernBanner = () => {
 
                                                 <Link
                                                     href="/contact"
-                                                    className="inline-flex items-center justify-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm text-white px-6 sm:px-8 lg:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 lg:py-5 xl:py-6 2xl:py-8 rounded-2xl lg:rounded-3xl font-semibold text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl hover:from-white/20 hover:to-white/10 transition-all border border-[#D4AF37]/30 hover:border-[#D4AF37]/50"
+                                                    className="inline-flex items-center justify-center gap-3 lg:gap-4 xl:gap-5 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm text-white px-6 sm:px-8 lg:px-10 xl:px-12 2xl:px-16 py-3 sm:py-4 lg:py-5 xl:py-6 2xl:py-8 rounded-2xl lg:rounded-3xl font-semibold text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl hover:from-white/20 hover:to-white/10 transition-all border border-[#ad4a16]/30 hover:border-[#ad4a16]/50"
                                                 >
                                                     <span className="text-lg sm:text-xl lg:text-2xl xl:text-3xl">📞</span>
                                                     Contact Us
@@ -271,12 +271,12 @@ const ModernBanner = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 2 }}
             >
-                <div className="flex flex-col items-center gap-2 lg:gap-3 xl:gap-4 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-[#D4AF37]/30 rounded-full px-4 lg:px-6 xl:px-8 py-3 lg:py-4 xl:py-5 hover:border-[#D4AF37]/50 transition-all">
-                    <span className="text-xs sm:text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent">Scroll to explore</span>
+                <div className="flex flex-col items-center gap-2 lg:gap-3 xl:gap-4 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-[#ad4a16]/30 rounded-full px-4 lg:px-6 xl:px-8 py-3 lg:py-4 xl:py-5 hover:border-[#ad4a16]/50 transition-all">
+                    <span className="text-xs sm:text-sm lg:text-base xl:text-lg font-semibold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent">Scroll to explore</span>
                     <motion.div
                         animate={{ y: [0, 8, 0] }}
                         transition={{ duration: 2, repeat: Infinity }}
-                        className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center"
+                        className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center"
                     >
                         <FaChevronDown className="text-white text-xs lg:text-sm xl:text-base" />
                     </motion.div>
@@ -306,8 +306,8 @@ const ModernBanner = () => {
                             repeat: Infinity,
                             delay: Math.random() * 3,
                         }}
-                    // className={`bg-gradient-to-r ${i % 3 === 0 ? 'from-[#D4AF37]/20 to-[#B8860B]/20' :
-                    //     i % 3 === 1 ? 'from-[#B8860B]/20 to-[#CD853F]/20' :
+                    // className={`bg-gradient-to-r ${i % 3 === 0 ? 'from-[#ad4a16]/20 to-[#8f3a17]/20' :
+                    //     i % 3 === 1 ? 'from-[#8f3a17]/20 to-[#312518]/20' :
                     //         'from-white/10 to-white/20'
                     //     } rounded-full`}
                     />

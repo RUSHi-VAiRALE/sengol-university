@@ -109,9 +109,9 @@ const ModernNavbar = () => {
     return (
         <>
             {/* Top Header */}
-            <div className="bg-gradient-to-r from-[#6b3f14] via-[#a37e31] to-[#6b3f14] text-white py-3 text-sm relative overflow-hidden">
+            <div className="bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] text-white py-3 text-sm relative overflow-hidden">
                 {/* Subtle animated background pattern */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#8b5a1f]/10 via-transparent to-[#8b5a1f]/10 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#ad4a16]/10 via-transparent to-[#8f3a17]/10 animate-pulse"></div>
                 <div className="w-full mx-auto px-4 lg:px-12 xl:px-16 2xl:px-20 max-w-[1400px] relative">
                     <div className="flex justify-between items-center">
                         <motion.span
@@ -150,13 +150,13 @@ const ModernNavbar = () => {
             >
                 <div className="w-full mx-auto px-4 lg:px-12 xl:px-16 2xl:px-20">
                     {/* University Header */}
-                    <div className="py-5 lg:py-6 border-b border-[#a37e31]/10">
+                    <div className="py-5 lg:py-6 border-b border-[#ad4a16]/10">
                         <div className="flex justify-between items-center">
                             {/* Logo and University Name */}
                             <div className="flex items-center gap-4 lg:gap-8">
                                 <Link href="/" className="flex items-center gap-4 lg:gap-6">
                                     <div className="relative">
-                                        <div className="absolute inset-0 bg-gradient-to-r from-[#a37e31]/20 to-[#6b3f14]/20 rounded-full blur-lg"></div>
+                                        <div className="absolute inset-0 bg-gradient-to-r from-[#ad4a16]/20 to-[#8f3a17]/20 rounded-full blur-lg"></div>
                                         <Image
                                             src="/images/logo-sengol.png"
                                             alt="Sengol International University"
@@ -166,7 +166,7 @@ const ModernNavbar = () => {
                                         />
                                     </div>
                                     <div className="hidden md:block">
-                                        <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold bg-gradient-to-r from-[#6b3f14] via-[#a37e31] to-[#6b3f14] bg-clip-text text-transparent tracking-tight leading-tight">
+                                        <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent tracking-tight leading-tight">
                                             SENGOL INTERNATIONAL UNIVERSITY
                                         </h1>
                                         <p className="text-xs lg:text-base xl:text-lg 2xl:text-xl text-gray-600 mt-1 font-medium">
@@ -181,7 +181,7 @@ const ModernNavbar = () => {
                                 <div className="flex items-center justify-end gap-4 mb-3">
                                     <a
                                         href="mailto:admission@sengolinternationaluniversity.edu.in"
-                                        className="flex items-center gap-3 lg:gap-4 xl:gap-5 text-[#6b3f14] hover:text-[#a37e31] transition-colors font-semibold text-sm lg:text-lg xl:text-xl 2xl:text-2xl"
+                                        className="flex items-center gap-3 lg:gap-4 xl:gap-5 text-[#ad4a16] hover:text-[#8f3a17] transition-colors font-semibold text-sm lg:text-lg xl:text-xl 2xl:text-2xl"
                                     >
                                         <FaEnvelope className="text-lg lg:text-xl xl:text-2xl" />
                                         <span>admission@sengolinternationaluniversity.edu.in</span>
@@ -199,7 +199,7 @@ const ModernNavbar = () => {
                                         <motion.a
                                             key={index}
                                             href={href}
-                                            className={`p-3 lg:p-4 xl:p-5 rounded-full bg-gradient-to-r from-[#a37e31]/10 to-[#6b3f14]/10 text-gray-700 transition-all ${color} hover:scale-110 hover:shadow-lg border border-[#a37e31]/20 backdrop-blur-sm`}
+                                            className={`p-3 lg:p-4 xl:p-5 rounded-full bg-gradient-to-r from-[#ad4a16]/10 to-[#8f3a17]/10 text-gray-700 transition-all ${color} hover:scale-110 hover:shadow-lg border border-[#ad4a16]/20 backdrop-blur-sm`}
                                             whileHover={{ scale: 1.1 }}
                                             whileTap={{ scale: 0.95 }}
                                         >
@@ -212,9 +212,9 @@ const ModernNavbar = () => {
                             {/* Mobile Menu Button */}
                             <button
                                 onClick={toggleMobileMenu}
-                                className="lg:hidden p-3 rounded-xl bg-gradient-to-r from-[#a37e31]/10 to-[#6b3f14]/10 hover:from-[#a37e31]/20 hover:to-[#6b3f14]/20 transition-all duration-300 border border-[#a37e31]/20"
+                                className="lg:hidden p-3 rounded-xl bg-gradient-to-r from-[#ad4a16]/10 to-[#8f3a17]/10 hover:from-[#ad4a16]/20 hover:to-[#8f3a17]/20 transition-all duration-300 border border-[#ad4a16]/20"
                             >
-                                {isMobileMenuOpen ? <FaTimes size={24} className="text-[#6b3f14]" /> : <FaBars size={24} className="text-[#6b3f14]" />}
+                                {isMobileMenuOpen ? <FaTimes size={24} className="text-[#ad4a16]" /> : <FaBars size={24} className="text-[#ad4a16]" />}
                             </button>
                         </div>
                     </div>
@@ -223,8 +223,8 @@ const ModernNavbar = () => {
                     <nav className="hidden lg:block py-8">
                         <div className="relative">
                             {/* Enhanced Background with decorative elements */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/10 via-[#B8860B]/5 to-[#D4AF37]/10 rounded-3xl backdrop-blur-sm"></div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D4AF37]/10 to-transparent rounded-3xl"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#ad4a16]/10 via-[#8f3a17]/5 to-[#312518]/10 rounded-3xl backdrop-blur-sm"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#ad4a16]/10 to-transparent rounded-3xl"></div>
 
                             <ul className="relative flex items-center justify-center gap-4 lg:gap-6 xl:gap-8 px-8 lg:px-10 xl:px-12">
                                 {navLinks.map((link, index) => (
@@ -237,16 +237,16 @@ const ModernNavbar = () => {
                                     >
                                         <Link
                                             href={link.href}
-                                            className="flex items-center gap-3 px-6 lg:px-7 xl:px-8 py-4 lg:py-4 xl:py-5 text-gray-800 font-bold text-lg lg:text-xl xl:text-2xl hover:text-[#B8860B] transition-all duration-300 rounded-2xl hover:bg-gradient-to-r hover:from-[#D4AF37]/15 hover:to-[#B8860B]/15 border border-transparent hover:border-[#D4AF37]/40 hover:shadow-xl backdrop-blur-sm transform hover:scale-105"
+                                            className="flex items-center gap-3 px-6 lg:px-7 xl:px-8 py-4 lg:py-4 xl:py-5 text-gray-800 font-bold text-lg lg:text-xl xl:text-2xl hover:text-[#8f3a17] transition-all duration-300 rounded-2xl hover:bg-gradient-to-r hover:from-[#ad4a16]/15 hover:to-[#8f3a17]/15 border border-transparent hover:border-[#ad4a16]/40 hover:shadow-xl backdrop-blur-sm transform hover:scale-105"
                                             onMouseEnter={() => link.submenu && setActiveDropdown(index)}
                                             onMouseLeave={() => setActiveDropdown(null)}
                                         >
-                                            <div className="w-2 h-2 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                            <div className="w-2 h-2 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                             {link.title}
                                             {link.submenu && (
                                                 <FaChevronDown
                                                     size={16}
-                                                    className="lg:w-5 lg:h-5 xl:w-6 xl:h-6 transition-transform group-hover:rotate-180 duration-300 text-[#B8860B] opacity-70 group-hover:opacity-100"
+                                                    className="lg:w-5 lg:h-5 xl:w-6 xl:h-6 transition-transform group-hover:rotate-180 duration-300 text-[#8f3a17] opacity-70 group-hover:opacity-100"
                                                 />
                                             )}
                                         </Link>
@@ -256,7 +256,7 @@ const ModernNavbar = () => {
                                             <AnimatePresence>
                                                 {activeDropdown === index && (
                                                     <motion.div
-                                                        className="absolute top-full left-0 mt-6 w-[480px] lg:w-[500px] xl:w-[520px] bg-gradient-to-br from-white/95 via-[#fffaf2]/95 to-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-[#D4AF37]/30 py-6 z-50 overflow-hidden"
+                                                        className="absolute top-full left-0 mt-6 w-[480px] lg:w-[500px] xl:w-[520px] bg-gradient-to-br from-white/95 via-[#fffaf2]/95 to-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-[#ad4a16]/30 py-6 z-50 overflow-hidden"
                                                         initial={{ opacity: 0, y: -20, scale: 0.95 }}
                                                         animate={{ opacity: 1, y: 0, scale: 1 }}
                                                         exit={{ opacity: 0, y: -20, scale: 0.95 }}
@@ -265,15 +265,15 @@ const ModernNavbar = () => {
                                                         onMouseLeave={() => setActiveDropdown(null)}
                                                     >
                                                         {/* Dropdown Header */}
-                                                        <div className="px-6 pb-4 mb-4 border-b border-[#D4AF37]/20">
+                                                        <div className="px-6 pb-4 mb-4 border-b border-[#ad4a16]/20">
                                                             <div className="flex items-center gap-3">
-                                                                <div className="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center">
+                                                                <div className="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center">
                                                                     <span className="text-white text-xs lg:text-sm font-bold">
                                                                         {link.title.charAt(0)}
                                                                     </span>
                                                                 </div>
                                                                 <div>
-                                                                    <h4 className="font-bold text-xl lg:text-2xl xl:text-2xl bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent">
+                                                                    <h4 className="font-bold text-xl lg:text-2xl xl:text-2xl bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent">
                                                                         {link.title}
                                                                     </h4>
                                                                     <p className="text-sm lg:text-base text-gray-600">Explore our offerings</p>
@@ -292,12 +292,12 @@ const ModernNavbar = () => {
                                                                 >
                                                                     <Link
                                                                         href={subLink.href}
-                                                                        className="flex items-center gap-4 px-6 py-4 text-lg lg:text-lg xl:text-xl text-gray-700 hover:text-[#B8860B] hover:bg-gradient-to-r hover:from-[#D4AF37]/10 hover:to-[#B8860B]/10 transition-all duration-300 mx-3 rounded-2xl font-medium group border border-transparent hover:border-[#D4AF37]/20 hover:shadow-lg"
+                                                                        className="flex items-center gap-4 px-6 py-4 text-lg lg:text-lg xl:text-xl text-gray-700 hover:text-[#8f3a17] hover:bg-gradient-to-r hover:from-[#ad4a16]/10 hover:to-[#8f3a17]/10 transition-all duration-300 mx-3 rounded-2xl font-medium group border border-transparent hover:border-[#ad4a16]/20 hover:shadow-lg"
                                                                     >
-                                                                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0"></div>
+                                                                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0"></div>
                                                                         <span className="flex-1">{subLink.text}</span>
-                                                                        <div className="w-5 h-5 rounded-full bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                                                            <span className="text-[#B8860B] text-xs">→</span>
+                                                                        <div className="w-5 h-5 rounded-full bg-gradient-to-r from-[#ad4a16]/20 to-[#8f3a17]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                                                            <span className="text-[#8f3a17] text-xs">→</span>
                                                                         </div>
                                                                     </Link>
                                                                 </motion.div>
@@ -318,7 +318,7 @@ const ModernNavbar = () => {
                                 >
                                     <Link
                                         href="#"
-                                        className="relative bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white px-8 lg:px-9 xl:px-10 py-4 lg:py-4 xl:py-5 rounded-2xl font-bold text-xl lg:text-xl xl:text-2xl hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 transform hover:scale-110 shadow-xl hover:shadow-2xl border border-[#D4AF37]/30 backdrop-blur-sm overflow-hidden group flex flex-row items-center gap-3"
+                                        className="relative bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] text-white px-8 lg:px-9 xl:px-10 py-4 lg:py-4 xl:py-5 rounded-2xl font-bold text-xl lg:text-xl xl:text-2xl hover:from-[#312518] hover:via-[#8f3a17] hover:to-[#ad4a16] transition-all duration-300 transform hover:scale-110 shadow-xl hover:shadow-2xl border border-[#ad4a16]/30 backdrop-blur-sm overflow-hidden group flex flex-row items-center gap-3"
                                     >
                                         <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         <div className="relative flex items-center gap-3">
@@ -355,23 +355,23 @@ const ModernNavbar = () => {
 
                         {/* Mobile Menu Panel */}
                         <motion.div
-                            className="fixed top-0 right-0 w-full sm:w-[450px] md:w-[500px] lg:w-[550px] h-full bg-gradient-to-br from-white/95 via-[#fffaf2]/95 to-white/95 backdrop-blur-xl z-50 lg:hidden overflow-y-auto shadow-2xl border-l border-[#D4AF37]/30"
+                            className="fixed top-0 right-0 w-full sm:w-[450px] md:w-[500px] lg:w-[550px] h-full bg-gradient-to-br from-white/95 via-[#fffaf2]/95 to-white/95 backdrop-blur-xl z-50 lg:hidden overflow-y-auto shadow-2xl border-l border-[#ad4a16]/30"
                             initial={{ x: "100%" }}
                             animate={{ x: 0 }}
                             exit={{ x: "100%" }}
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         >
                             {/* Modern Header with Decorative Elements */}
-                            <div className="relative bg-gradient-to-r from-[#D4AF37]/10 via-[#B8860B]/5 to-[#D4AF37]/10 border-b border-[#D4AF37]/20">
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#D4AF37]/10 to-transparent"></div>
+                            <div className="relative bg-gradient-to-r from-[#ad4a16]/10 via-[#8f3a17]/5 to-[#312518]/10 border-b border-[#ad4a16]/20">
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#ad4a16]/10 to-transparent"></div>
                                 <div className="relative p-6 sm:p-8">
                                     <div className="flex justify-between items-center">
                                         <div className="flex items-center gap-4">
-                                            <div className="w-12 h-12 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center shadow-lg">
+                                            <div className="w-12 h-12 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center shadow-lg">
                                                 <span className="text-white font-bold text-lg">S</span>
                                             </div>
                                             <div>
-                                                <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent">
+                                                <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent">
                                                     Navigation
                                                 </h3>
                                                 <p className="text-sm text-gray-600 font-medium">Sengol International University</p>
@@ -379,9 +379,9 @@ const ModernNavbar = () => {
                                         </div>
                                         <button
                                             onClick={toggleMobileMenu}
-                                            className="p-4 rounded-xl bg-gradient-to-r from-[#D4AF37]/20 to-[#B8860B]/20 hover:from-[#D4AF37]/30 hover:to-[#B8860B]/30 transition-all duration-300 border border-[#D4AF37]/30 shadow-lg hover:shadow-xl transform hover:scale-105"
+                                            className="p-4 rounded-xl bg-gradient-to-r from-[#ad4a16]/20 to-[#8f3a17]/20 hover:from-[#ad4a16]/30 hover:to-[#8f3a17]/30 transition-all duration-300 border border-[#ad4a16]/30 shadow-lg hover:shadow-xl transform hover:scale-105"
                                         >
-                                            <FaTimes size={22} className="text-[#B8860B]" />
+                                            <FaTimes size={22} className="text-[#8f3a17]" />
                                         </button>
                                     </div>
                                 </div>
@@ -399,26 +399,26 @@ const ModernNavbar = () => {
                                                 transition={{ delay: index * 0.1, duration: 0.3 }}
                                                 className="group"
                                             >
-                                                <div className="bg-gradient-to-r from-white/50 to-white/30 backdrop-blur-sm rounded-2xl border border-[#D4AF37]/20 hover:border-[#D4AF37]/40 transition-all duration-300 hover:shadow-lg">
+                                                <div className="bg-gradient-to-r from-white/50 to-white/30 backdrop-blur-sm rounded-2xl border border-[#ad4a16]/20 hover:border-[#ad4a16]/40 transition-all duration-300 hover:shadow-lg">
                                                     <div className="flex items-center justify-between p-1">
                                                         <Link
                                                             href={link.href}
-                                                            className="flex-1 py-4 px-6 text-gray-800 hover:text-[#B8860B] transition-all duration-300 font-semibold text-base sm:text-lg rounded-xl hover:bg-gradient-to-r hover:from-[#D4AF37]/10 hover:to-[#B8860B]/10"
+                                                            className="flex-1 py-4 px-6 text-gray-800 hover:text-[#8f3a17] transition-all duration-300 font-semibold text-base sm:text-lg rounded-xl hover:bg-gradient-to-r hover:from-[#ad4a16]/10 hover:to-[#8f3a17]/10"
                                                             onClick={() => !link.submenu && toggleMobileMenu()}
                                                         >
                                                             <div className="flex items-center gap-3">
-                                                                <div className="w-2 h-2 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                                                                <div className="w-2 h-2 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full opacity-60 group-hover:opacity-100 transition-opacity"></div>
                                                                 {link.title}
                                                             </div>
                                                         </Link>
                                                         {link.submenu && (
                                                             <button
                                                                 onClick={() => handleDropdownToggle(index)}
-                                                                className="p-4 m-1 hover:bg-gradient-to-r hover:from-[#D4AF37]/20 hover:to-[#B8860B]/20 rounded-xl transition-all duration-300 border border-transparent hover:border-[#D4AF37]/30"
+                                                                className="p-4 m-1 hover:bg-gradient-to-r hover:from-[#ad4a16]/20 hover:to-[#8f3a17]/20 rounded-xl transition-all duration-300 border border-transparent hover:border-[#ad4a16]/30"
                                                             >
                                                                 <FaChevronDown
                                                                     className={`transition-transform duration-300 ${activeDropdown === index ? 'rotate-180' : ''
-                                                                        } text-[#B8860B]`}
+                                                                        } text-[#8f3a17]`}
                                                                     size={16}
                                                                 />
                                                             </button>
@@ -433,7 +433,7 @@ const ModernNavbar = () => {
                                                             exit={{ opacity: 0, height: 0 }}
                                                             transition={{ duration: 0.3 }}
                                                         >
-                                                            <div className="bg-gradient-to-br from-[#D4AF37]/5 to-[#B8860B]/5 rounded-xl p-2 border border-[#D4AF37]/10">
+                                                            <div className="bg-gradient-to-br from-[#ad4a16]/5 to-[#8f3a17]/5 rounded-xl p-2 border border-[#ad4a16]/10">
                                                                 <div className="space-y-2">
                                                                     {link.submenu.map((subLink, subIndex) => (
                                                                         <motion.div
@@ -444,11 +444,11 @@ const ModernNavbar = () => {
                                                                         >
                                                                             <Link
                                                                                 href={subLink.href}
-                                                                                className="block py-3 px-4 text-sm sm:text-base text-gray-700 hover:text-[#B8860B] hover:bg-gradient-to-r hover:from-[#D4AF37]/10 hover:to-[#B8860B]/10 rounded-lg transition-all duration-300 border border-transparent hover:border-[#D4AF37]/20 font-medium"
+                                                                                className="block py-3 px-4 text-sm sm:text-base text-gray-700 hover:text-[#8f3a17] hover:bg-gradient-to-r hover:from-[#ad4a16]/10 hover:to-[#8f3a17]/10 rounded-lg transition-all duration-300 border border-transparent hover:border-[#ad4a16]/20 font-medium"
                                                                                 onClick={toggleMobileMenu}
                                                                             >
                                                                                 <div className="flex items-center gap-3">
-                                                                                    <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full opacity-50"></div>
+                                                                                    <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full opacity-50"></div>
                                                                                     {subLink.text}
                                                                                 </div>
                                                                             </Link>
@@ -471,17 +471,17 @@ const ModernNavbar = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.5 }}
                                 >
-                                    <div className="relative bg-gradient-to-br from-[#D4AF37]/10 to-[#B8860B]/10 rounded-2xl p-6 border border-[#D4AF37]/20 backdrop-blur-sm">
-                                        <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/5 via-transparent to-[#B8860B]/5 rounded-2xl"></div>
+                                    <div className="relative bg-gradient-to-br from-[#ad4a16]/10 to-[#8f3a17]/10 rounded-2xl p-6 border border-[#ad4a16]/20 backdrop-blur-sm">
+                                        <div className="absolute inset-0 bg-gradient-to-r from-[#ad4a16]/5 via-transparent to-[#8f3a17]/5 rounded-2xl"></div>
                                         <div className="relative text-center mb-4">
-                                            <h4 className="text-lg font-bold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent mb-2">
+                                            <h4 className="text-lg font-bold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent mb-2">
                                                 Ready to Join Us?
                                             </h4>
                                             <p className="text-sm text-gray-600">Start your journey with Sengol International University</p>
                                         </div>
                                         <Link
                                             href="#"
-                                            className="block w-full bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white text-center py-4 px-6 rounded-xl font-bold text-lg hover:from-[#B8860B] hover:to-[#D4AF37] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+                                            className="block w-full bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] text-white text-center py-4 px-6 rounded-xl font-bold text-lg hover:from-[#312518] hover:via-[#8f3a17] hover:to-[#ad4a16] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
                                             onClick={toggleMobileMenu}
                                         >
                                             <div className="flex items-center justify-center gap-3">
@@ -500,9 +500,9 @@ const ModernNavbar = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.6 }}
                                 >
-                                    <div className="bg-gradient-to-br from-white/30 to-white/20 backdrop-blur-sm rounded-2xl p-6 border border-[#D4AF37]/20">
+                                    <div className="bg-gradient-to-br from-white/30 to-white/20 backdrop-blur-sm rounded-2xl p-6 border border-[#ad4a16]/20">
                                         <div className="text-center mb-4">
-                                            <h4 className="text-base font-bold bg-gradient-to-r from-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent mb-2">
+                                            <h4 className="text-base font-bold bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] bg-clip-text text-transparent mb-2">
                                                 Connect With Us
                                             </h4>
                                             <p className="text-xs text-gray-600">Follow us on social media for updates</p>
@@ -539,9 +539,9 @@ const ModernNavbar = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.8 }}
                                 >
-                                    <div className="bg-gradient-to-br from-[#D4AF37]/5 to-[#B8860B]/5 rounded-2xl p-6 border border-[#D4AF37]/20">
+                                    <div className="bg-gradient-to-br from-[#ad4a16]/5 to-[#8f3a17]/5 rounded-2xl p-6 border border-[#ad4a16]/20">
                                         <div className="flex items-center gap-4 mb-4">
-                                            <div className="w-10 h-10 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center">
+                                            <div className="w-10 h-10 bg-gradient-to-r from-[#ad4a16] via-[#8f3a17] to-[#312518] rounded-full flex items-center justify-center">
                                                 <FaPhoneAlt className="text-white text-sm" />
                                             </div>
                                             <div>
@@ -551,11 +551,11 @@ const ModernNavbar = () => {
                                         </div>
                                         <div className="space-y-3 text-sm">
                                             <div className="flex items-center gap-3 p-3 bg-white/30 rounded-lg">
-                                                <FaPhoneAlt className="text-[#B8860B] text-xs" />
+                                                <FaPhoneAlt className="text-[#8f3a17] text-xs" />
                                                 <span className="text-gray-700 font-medium">+91-9205299887</span>
                                             </div>
                                             <div className="flex items-center gap-3 p-3 bg-white/30 rounded-lg">
-                                                <FaEnvelope className="text-[#B8860B] text-xs" />
+                                                <FaEnvelope className="text-[#8f3a17] text-xs" />
                                                 <span className="text-gray-700 font-medium text-xs">admission@sengolinternationaluniversity.edu.in</span>
                                             </div>
                                         </div>
