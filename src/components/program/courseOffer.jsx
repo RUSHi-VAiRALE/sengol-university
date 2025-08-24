@@ -9,62 +9,82 @@ const CourseOffer = () => {
   const courses = [
     {
       id: 1,
-      title: "Department of Engineering & Technology",
+      title: "School of Engineering & Technology",
       image: "/images/courses/engineering.jpg"
     },
     {
       id: 2,
-      title: "Department of Commerce",
+      title: "School of Commerce and Management Studies",
       image: "/images/courses/commerce.jpg"
     },
     {
       id: 3,
-      title: "Department of Computer Application",
+      title: "School of Computer Science & IT",
       image: "/images/courses/computer.jpg"
     },
     {
       id: 4,
+      title: "School of Architecture & Planning",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 5,
       title: "School of Hotel Management",
       image: "/images/courses/hotel.jpg"
     },
     {
-      id: 5,
+      id: 6,
       title: "School of Library & Information Science",
       image: "/images/courses/library.jpg"
     },
     {
-      id: 6,
-      title: "Department of General Science",
-      image: "/images/courses/course.jpg"
-    },
-    {
       id: 7,
-      title: "Department of Arts",
+      title: "School of Science",
       image: "/images/courses/course.jpg"
     },
     {
       id: 8,
-      title: "Department of Physical Education",
+      title: "School of Arts and Social Studies",
       image: "/images/courses/course.jpg"
     },
     {
       id: 9,
-      title: "Dept. of Journalism & Mass Communication",
+      title: "School of Education and Physical Education",
       image: "/images/courses/course.jpg"
     },
     {
       id: 10,
-      title: "Department of Management",
+      title: "School of Journalism & Mass Media Communication",
       image: "/images/courses/course.jpg"
     },
     {
       id: 11,
-      title: "School of Animation",
+      title: "School of Law",
       image: "/images/courses/course.jpg"
     },
     {
       id: 12,
+      title: "School of Para-Medical Science",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 13,
+      title: "School of Philosophy and Research",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 14,
       title: "School of Fire & Safety",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 15,
+      title: "School of Animation",
+      image: "/images/courses/course.jpg"
+    },
+    {
+      id: 16,
+      title: "School of Vocational Studies",
       image: "/images/courses/course.jpg"
     },
   ];
