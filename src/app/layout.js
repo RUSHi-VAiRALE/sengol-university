@@ -4,7 +4,8 @@ import "./globals.css";
 import TopHeader from "@/components/TopHeader";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
-
+import Footer from "@/components/Footer";
+import ModernNavbar from "@/components/ModernNavbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,13 +27,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.variable} min-h-screen`}>
         <header className="header header__sticky v__2">
-          {/* <TopHeader /> */}
-          {/* <Navbar /> */}
+          <ModernNavbar />
         </header>
         <main>{children}</main>
-        <footer className="rts-footer rts-footer-padding v_2">
-          {/* <Footer />
-          <ScrollToTop /> */}
+        <footer className="bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-white">
+          <Footer />
+          <ScrollToTop />
         </footer>
       </body>
     </html>
